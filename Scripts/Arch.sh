@@ -20,7 +20,7 @@ makepkg -si
 cd ..
 
 # i3, polybar, etc.
-sudo pacman -S --needed i3 polybar capitaine-cursors baobab arandr keepassxc dunst firefox kitty links galculator kdenlive lxappearance maim xcolor xclip mate-polkit mousepad nemo nemo-fileroller obs-studio pavucontrol picom qbittorrent ristretto gimp syncthing torbrowser-launcher wine python-pywal xfce4-screensaver nitrogen rofi speech-dispatcher unrar unzip vlc xdotool xterm ani-cli
+sudo pacman -S --needed i3 polybar capitaine-cursors baobab arandr keepassxc dunst firefox kitty links galculator kdenlive lxappearance maim xcolor xclip mate-polkit mousepad nemo nemo-fileroller obs-studio pavucontrol picom qbittorrent ristretto gimp syncthing torbrowser-launcher wine python-pywal xfce4-screensaver nitrogen rofi speech-dispatcher unrar unzip vlc xdotool xterm
 
 # ly display manager
 sudo systemctl enable ly
@@ -54,9 +54,9 @@ sudo pacman -S --needed xfburn
 INSTALACIÓN DE iwd
 sudo pacman -S --needed iwd
 
-# MEGA
+# MEGA Y ani-cli
 yay -S --needed megasync-bin
-
+yay -S --needed ani-cli
 # flatpaks
 echo INSTALACIÓN DE flatpak Y VARIOS QUE UTILIZO
 sudo pacman -S --needed flatpak
