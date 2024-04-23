@@ -3,14 +3,6 @@ cd ~/
 sudo pacman -Syu
 sudo pacman -S --needed git wget xarchiver cowsay gparted htop neofetch fish links ly man-db ntfs-3g exfatprogs vim plocate sl ufw android-tools iwd openssh
 
-# ufw
-sudo ufw limit 22/tcp
-sudo ufw allow 80/tcp
-sudo ufw allow 443/tcp
-sudo ufw default deny incoming
-sudo ufw default allow outgoing
-sudo ufw enable
-
 # Instalación de yay-bin
 echo -INSTALACIÓN DE yay-bin-
 sudo pacman -S --needed git base-devel
@@ -39,7 +31,7 @@ cp -rfv .config/ .bashrc .vimrc Scripts/ Wallpaper/ ~/
 sudo mkdir /usr/share/themes/ /usr/share/rofi/themes/
 sudo cp -rfv Groove+/ /usr/share/themes/
 sudo cp -rfv nord.rasi /usr/share/rofi/themes/
-sudo cp -rfv Hurmit/ /usr/share/fonts/
+sudo cp -rfv Hermit/ /usr/share/fonts/
 cd ..
 
 # Fuentes
@@ -79,3 +71,11 @@ sudo mkdir /usr/share/themes/ /usr/share/rofi/ /usr/share/rofi/themes
 sudo cp -rfv Groove+/ /usr/share/themes/
 sudo cp -rfv nord.rasi /usr/share/rofi/themes/
 cd ..
+
+# ufw
+sudo ufw limit 22/tcp
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw enable
