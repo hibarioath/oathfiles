@@ -1,10 +1,10 @@
 # Actualización del sistema y paquetes básicos
 cd ~/
 sudo pacman -Syu
-sudo pacman -S --needed git wget xarchiver cowsay gparted htop neofetch fish links ly man-db ntfs-3g exfatprogs vim plocate sl ufw android-tools iwd openssh
+sudo pacman -S --needed git wget xarchiver cowsay gparted htop neofetch fish links ly man-db ntfs-3g exfatprogs vim plocate sl ufw android-tools openssh
 
 # Instalación de yay-bin
-echo -INSTALACIÓN DE yay-bin-
+echo ---INSTALACIÓN DE yay-bin PARA USAR EL AUR---
 sudo pacman -S --needed git base-devel
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
@@ -22,7 +22,7 @@ echo INSTALACIÓN DE steam
 sudo pacman -S --needed steam
 
 # Creación de varias carpetas
-mkdir Imágenes/ Descargas/ Vídeos/ Música/ Documentos/ ISOs\ SSD/ Wallpaper/ Scripts/ Torrents/
+mkdir Imágenes/ Descargas/ Vídeos/ Música/ Documentos/ Torrents/
 
 # Mis archivos en GitHub
 git clone https://github.com/hibarioath/oathfiles
@@ -35,39 +35,42 @@ sudo cp -rfv Hermit/ /usr/share/fonts/
 cd ..
 
 # Fuentes
-echo VARIAS FUENTES QUE UTILIZO
+echo ---VARIAS FUENTES QUE UTILIZO---
 yay -S --needed ttf-linux-libertine ttf-inconsolata ttf-comic-sans ttf-ms-fonts
 
 # Xfburn
-echo INSTALACIÓN DE xfburn
+echo ---INSTALACIÓN DE xfburn PARA GRABAR DISCOS---
 sudo pacman -S --needed xfburn
 
 # Redshifter
-echo REDSHIFTER
+echo ---REDSHITER PARA FILTRO DE LUZ AZUL---
 yay -S redshifter
 
 # iwd
-INSTALACIÓN DE iwd
+echo ---INSTALACIÓN DE iwd SI NO SE USA NetworkManager---
 sudo pacman -S --needed iwd
 
-# MEGA Y ani-cli
+# Cosas del AUR
+echo ---COSAS DEL AUR---
 yay -S --needed megasync-bin
 yay -S --needed ani-cli
+yay -S --needed autotiling-rs-git
 # flatpaks
 echo INSTALACIÓN DE flatpak Y VARIOS QUE UTILIZO
 sudo pacman -S --needed flatpak
-flatpak install pcsx2 duckstation dolphinemu kcolorchooser mediawriter vencord hakuneko flatseal libreoffice gradience ungoogled-chromium vscodium
+#flatpak install pcsx2 duckstation dolphinemu kcolorchooser mediawriter vencord hakuneko flatseal libreoffice gradience ungoogledchromium vscodium
 
 # VirtualBox
-echo INSTALACIÓN DE virtualbox, dkms Y linux-lts-headers -necesario para máquinas virtuales-
+echo ---INSTALACIÓN DE virtualbox, dkms Y linux-lts-headers NECESARIO PARA MÁQUINAS VIRTUALES---
 sudo pacman -S --needed virtualbox dkms linux-lts-headers
 sudo modprober vboxdrv
 
 # Crackling en Pipewire (solución)
-echo 2048 > /sys/class/rtc/rtc0/max_user_freq
-echo 2048 > /proc/sys/dev/hpet/max-user-freq
+sudo echo 2048 > /sys/class/rtc/rtc0/max_user_freq
+sudo echo 2048 > /proc/sys/dev/hpet/max-user-freq
 
 # Mis archivos en GitHub
+cd ~/
 git clone https://github.com/hibarioath/oathfiles
 cd oathfiles/
 cp -rfv .config/ .vimrc ~/
