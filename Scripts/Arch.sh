@@ -42,6 +42,10 @@ yay -S --needed ttf-linux-libertine ttf-inconsolata ttf-comic-sans ttf-ms-fonts
 echo INSTALACIÓN DE xfburn
 sudo pacman -S --needed xfburn
 
+# Redshifter
+echo REDSHIFTER
+yay -S redshifter
+
 # iwd
 INSTALACIÓN DE iwd
 sudo pacman -S --needed iwd

@@ -32,6 +32,7 @@ exec --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
 #exec --no-startup-id /usr/bin/polkit-dumb-agent
 #exec --no-startup-id dunst
 #exec --no-startup-id megasync
+exec --no-startup-id syncthing
 #exec --no-startup-id caffeine-ng
 exec_always --no-startup-id xfce4-power-manager
 exec_always --no-startup-id autotiling-rs
@@ -69,11 +70,12 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec kitty
-
+bindsym $mod+Shift+T exec kitty
+bindsym $mod+Return exec xfce4-terminal
+#bindsym $mod+Return exec st
 # kill focused window
 bindsym $mod+q kill
-bindsym $mod+n exec --no-startup-id nemo
+bindsym $mod+n exec --no-startup-id pcmanfm
 # start dmenu (a program launcher)
 ##bindsym $mod+d exec --no-startup-id j4-dmenu-desktop
 bindsym $mod+d exec --no-startup-id rofi -show drun
