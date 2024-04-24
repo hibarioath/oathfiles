@@ -12,7 +12,7 @@ makepkg -si
 cd ..
 
 # i3, polybar, etc.
-sudo pacman -S --needed i3 polybar capitaine-cursors baobab arandr keepassxc dunst firefox kitty links galculator kdenlive lxappearance maim xcolor xclip mate-polkit mousepad nemo nemo-fileroller obs-studio pavucontrol picom qbittorrent ristretto gimp syncthing torbrowser-launcher wine python-pywal xfce4-screensaver nitrogen rofi speech-dispatcher unrar unzip vlc xdotool xterm
+sudo pacman -S --needed i3 polybar capitaine-cursors baobab arandr keepassxc dunst firefox xfce4-terminal links galculator kdenlive lxappearance maim xcolor xclip mate-polkit mousepad nemo nemo-fileroller obs-studio pavucontrol picom qbittorrent ristretto gimp syncthing torbrowser-launcher wine python-pywal xfce4-screensaver nitrogen rofi speech-dispatcher unrar unzip vlc xdotool xterm
 
 # ly display manager
 sudo systemctl enable ly
@@ -70,7 +70,7 @@ echo 2048 > /proc/sys/dev/hpet/max-user-freq
 # Mis archivos en GitHub
 git clone https://github.com/hibarioath/oathfiles
 cd oathfiles/
-cp -rfv .config/ .bashrc .vimrc Scripts/ Wallpaper/ ~/
+cp -rfv .config/ .vimrc ~/
 sudo mkdir /usr/share/themes/ /usr/share/rofi/ /usr/share/rofi/themes
 sudo cp -rfv Groove+/ /usr/share/themes/
 sudo cp -rfv nord.rasi /usr/share/rofi/themes/
