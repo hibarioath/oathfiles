@@ -1,7 +1,7 @@
 # Actualización del sistema y paquetes básicos
 cd ~/
 sudo pacman -Syu
-sudo pacman -S --needed git wget xarchiver cowsay gparted htop neofetch fish links ly man-db ntfs-3g exfatprogs vim plocate sl ufw android-tools openssh
+sudo pacman -S --needed git wget xarchiver gparted htop neofetch fish links ly man-db ntfs-3g exfatprogs vim plocate ufw android-tools openssh
 
 # Instalación de yay-bin
 echo ---INSTALACIÓN DE yay-bin PARA USAR EL AUR---
@@ -12,29 +12,30 @@ makepkg -si
 cd ..
 
 # i3, polybar, etc.
-sudo pacman -S --needed i3 polybar capitaine-cursors baobab arandr keepassxc dunst firefox xfce4-terminal links galculator kdenlive lxappearance maim xcolor xclip mate-polkit mousepad pcmanfm obs-studio pavucontrol picom qbittorrent gimp syncthing torbrowser-launcher wine python-pywal xfce4-screensaver nitrogen rofi speech-dispatcher unrar unzip vlc xdotool xterm
+sudo pacman -S --needed i3 polybar baobab arandr keepassxc dunst firefox xfce4-terminal galculator kdenlive lxappearance maim xcolor xclip mate-polkit mousepad pcmanfm obs-studio pavucontrol picom qbittorrent playerctl yad gimp syncthing torbrowser-launcher xfce4-screensaver nitrogen rofi speech-dispatcher unrar unzip vlc xdotool
 
 # ly display manager
 sudo systemctl enable ly
 
 # Steam
-echo INSTALACIÓN DE steam
-sudo pacman -S --needed steam
+#echo INSTALACIÓN DE steam
+#sudo pacman -S --needed steam
 
 # Creación de varias carpetas
-mkdir Imágenes/ Descargas/ Vídeos/ Música/ Documentos/ Torrents/
+mkdir Artema/ Saves/ Imágenes/ Descargas/ Vídeos/ Música/ Documentos/ Torrents/
+# TLP
+yay -S tlp tlp-rdw
 
 # Mis archivos en GitHub
 cd ~/oathfiles/
-cp -rfv .config/ .bashrc .vimrc Scripts/ Wallpaper/ ~/
+cp -rfv .config/ .bashrc .vimrc ~/
 sudo mkdir /usr/share/themes/ /usr/share/rofi/themes/
 sudo cp -rfv nord.rasi /usr/share/rofi/themes/
-sudo cp -rfv Hermit/ /usr/share/fonts/
 cd ..
 
 # Fuentes
 echo ---VARIAS FUENTES QUE UTILIZO---
-yay -S --needed ttf-linux-libertine ttf-inconsolata ttf-comic-sans ttf-ms-fonts
+yay -S --needed otf-hermit-nerd ttf-ms-fonts
 
 # Xfburn
 echo ---INSTALACIÓN DE xfburn PARA GRABAR DISCOS---
@@ -50,12 +51,12 @@ sudo pacman -S --needed iwd
 
 # Cosas del AUR
 echo ---COSAS DEL AUR---
-yay -S --needed megasync-bin
+# yay -S --needed megasync-bin
 yay -S --needed ani-cli
 yay -S --needed autotiling-rs-git
 # flatpaks
-echo INSTALACIÓN DE flatpak Y VARIOS QUE UTILIZO
-sudo pacman -S --needed flatpak
+# echo INSTALACIÓN DE flatpak Y VARIOS QUE UTILIZO
+# sudo pacman -S --needed flatpak
 #flatpak install pcsx2 duckstation dolphinemu kcolorchooser mediawriter vencord hakuneko flatseal libreoffice gradience ungoogledchromium vscodium
 
 # VirtualBox
@@ -73,7 +74,7 @@ git clone https://github.com/hibarioath/oathfiles
 cd oathfiles/
 cp -rfv .config/ .vimrc ~/
 sudo mkdir /usr/share/themes/ /usr/share/rofi/ /usr/share/rofi/themes
-sudo cp -rfv Groove+/ /usr/share/themes/
+# sudo cp -rfv Groove+/ /usr/share/themes/
 sudo cp -rfv nord.rasi /usr/share/rofi/themes/
 cd ..
 
@@ -84,3 +85,8 @@ sudo ufw allow 443/tcp
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 sudo ufw enable
+
+# Start TLP
+sudo systemctl enable tlp
+sudo systemctl start tlp
+sudo tlp start
