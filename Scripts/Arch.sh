@@ -21,7 +21,7 @@ sudo pacman -S --needed i3 btop polybar arandr keepassxc dunst firefox xfce4-ter
 sudo pacman -S --needed steam
 
 # Creación de varias carpetas
-mkdir Artema/ Saves/ Imágenes/ Descargas/ Vídeos/ Música/ Documentos/ Torrents/
+mkdir Artema/ Saves/ Pictures/ Downloads/ Videos/ Music/ Documents/ Torrents/
 
 # TLP
 yay -S tlp tlp-rdw
