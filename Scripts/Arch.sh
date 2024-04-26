@@ -11,8 +11,9 @@ cd yay-bin
 makepkg -si
 cd ..
 
+yay -S --needed blueman
 # i3, polybar, etc.
-sudo pacman -S --needed i3 polybar arandr keepassxc dunst firefox xfce4-terminal galculator kdenlive lxappearance maim xcolor xclip mate-polkit mousepad pcmanfm obs-studio pavucontrol libreoffice-fresh picom qbittorrent gimp syncthing torbrowser-launcher xfce4-screensaver nitrogen rofi speech-dispatcher unrar unzip vlc xdotool
+sudo pacman -S --needed i3 btop polybar arandr keepassxc dunst firefox xfce4-terminal galculator kdenlive lxappearance maim xcolor audacity ristretto xclip mate-polkit mousepad pcmanfm obs-studio pavucontrol libreoffice-fresh picom qbittorrent gimp syncthing torbrowser-launcher xfce4-screensaver nitrogen rofi speech-dispatcher unrar unzip vlc xdotool
 
 # ly display manager
 # sudo systemctl enable ly
@@ -38,7 +39,7 @@ cd ..
 yay -S yad playerctl
 
 # Fuentes
-yay -S --needed ttf-noto-emoji-monochrome otf-hermit-nerd ttf-ms-fonts
+yay -S --needed noto-fonts-cjk ttf-noto-emoji-monochrome otf-hermit-nerd ttf-ms-fonts
 
 yay -S --needed cava
 sudo pacman -S --needed xfburn
