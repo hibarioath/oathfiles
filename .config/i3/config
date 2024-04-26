@@ -43,6 +43,7 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 #The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
+bindsym $mod+p exec pavucontrol
 bindsym $mod+j exec firefox
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
@@ -243,7 +244,7 @@ bindsym --release $mod+Shift+j exec "redshifter /"
 bindsym --release $mod+Shift+k exec "redshifter 3400K"
 bindsym --release $mod+Shift+l exec "redshifter 2700"
 # class                 border  backgr. text    indicator child_border
-client.focused           #35919b #090e23 #35919b #35919b   #35919b
+client.focused           #d3869b #090e23 #35919b #d3869b   #d3869b
 client.focused_inactive #97979700 #97979700 #97979700 #97979700   #97979700
 client.unfocused        #97979700 #97979700 #97979700 #97979700   #97979700
 #client.urgent           #979797 #979797 #979797 #979797   #979797

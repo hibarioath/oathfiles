@@ -12,8 +12,8 @@
   <property name="misc-show-unsafe-paste-dialog" type="bool" value="false"/>
   <property name="background-image-file" type="string" value="/home/hibari/MEGA/Bromita/GH1VvahWEAABM1O.jpg"/>
   <property name="background-image-shading" type="double" value="0.59999999999999998"/>
-  <property name="color-foreground" type="string" value="#ffffff"/>
-  <property name="color-background" type="string" value="#000000"/>
+  <property name="color-foreground" type="string" value="#ebebdbdbb2b2"/>
+  <property name="color-background" type="string" value="#282828282828"/>
   <property name="color-background-vary" type="bool" value="false"/>
   <property name="color-cursor-foreground" type="string" value=""/>
   <property name="color-cursor" type="string" value=""/>
@@ -23,8 +23,9 @@
   <property name="color-selection-use-default" type="bool" value="true"/>
   <property name="color-bold" type="string" value=""/>
   <property name="color-bold-use-default" type="bool" value="true"/>
-  <property name="color-palette" type="string" value="#000000;#aa0000;#00aa00;#aa5500;#0000aa;#aa00aa;#00aaaa;#aaaaaa;#555555;#ff5555;#55ff55;#ffff55;#5555ff;#ff55ff;#55ffff;#ffffff"/>
+  <property name="color-palette" type="string" value="rgb(40,40,40);rgb(204,36,29);rgb(152,151,26);rgb(215,153,33);rgb(69,133,136);rgb(177,98,134);rgb(104,157,106);rgb(168,153,132);rgb(146,131,116);rgb(251,73,52);rgb(184,187,38);rgb(250,189,47);rgb(131,165,152);rgb(211,134,155);rgb(142,192,124);rgb(235,219,178)"/>
   <property name="color-bold-is-bright" type="bool" value="true"/>
   <property name="color-use-theme" type="bool" value="false"/>
-  <property name="tab-activity-color" type="string" value="#aa0000"/>
+  <property name="tab-activity-color" type="string" value="#cccc24241d1d"/>
+  <property name="misc-cursor-blinks" type="bool" value="true"/>
 </channel>
