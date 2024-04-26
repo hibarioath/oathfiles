@@ -1,7 +1,7 @@
 # Actualización del sistema y paquetes básicos
 cd ~/
 sudo pacman -Syu
-sudo pacman -S --needed git wget xarchiver gparted htop neofetch fish links ly man-db ntfs-3g exfatprogs vim plocate ufw android-tools openssh
+sudo pacman -S --needed git wget xarchiver gparted htop neofetch fish links man-db ntfs-3g exfatprogs vim plocate ufw android-tools openssh gvfs
 
 # Instalación de yay-bin
 echo ---INSTALACIÓN DE yay-bin PARA USAR EL AUR---
@@ -12,48 +12,45 @@ makepkg -si
 cd ..
 
 # i3, polybar, etc.
-sudo pacman -S --needed i3 polybar baobab arandr keepassxc dunst firefox xfce4-terminal galculator kdenlive lxappearance maim xcolor xclip mate-polkit mousepad pcmanfm obs-studio pavucontrol picom qbittorrent playerctl yad gimp syncthing torbrowser-launcher xfce4-screensaver nitrogen rofi speech-dispatcher unrar unzip vlc xdotool
+sudo pacman -S --needed i3 polybar arandr keepassxc dunst firefox xfce4-terminal galculator kdenlive lxappearance maim xcolor xclip mate-polkit mousepad pcmanfm obs-studio pavucontrol libreoffice-fresh picom qbittorrent gimp syncthing torbrowser-launcher xfce4-screensaver nitrogen rofi speech-dispatcher unrar unzip vlc xdotool
 
 # ly display manager
-sudo systemctl enable ly
+# sudo systemctl enable ly
 
-# Steam
-#echo INSTALACIÓN DE steam
-#sudo pacman -S --needed steam
+sudo pacman -S --needed steam
 
 # Creación de varias carpetas
 mkdir Artema/ Saves/ Imágenes/ Descargas/ Vídeos/ Música/ Documentos/ Torrents/
+
 # TLP
 yay -S tlp tlp-rdw
 
 # Mis archivos en GitHub
+cd ~/
+git clone https://github.com/hibarioath/oathfiles
 cd ~/oathfiles/
 cp -rfv .config/ .bashrc .vimrc ~/
 sudo mkdir /usr/share/themes/ /usr/share/rofi/themes/
 sudo cp -rfv nord.rasi /usr/share/rofi/themes/
 cd ..
 
+# Dependencias (polybar)
+yay -S yad playerctl
+
 # Fuentes
-echo ---VARIAS FUENTES QUE UTILIZO---
-yay -S --needed otf-hermit-nerd ttf-ms-fonts
+yay -S --needed ttf-noto-emoji-monochrome otf-hermit-nerd ttf-ms-fonts
 
-# Xfburn
-echo ---INSTALACIÓN DE xfburn PARA GRABAR DISCOS---
+yay -S --needed cava
 sudo pacman -S --needed xfburn
-
-# Redshifter
-echo ---REDSHITER PARA FILTRO DE LUZ AZUL---
 yay -S redshifter
-
-# iwd
-echo ---INSTALACIÓN DE iwd SI NO SE USA NetworkManager---
 sudo pacman -S --needed iwd
-
-# Cosas del AUR
-echo ---COSAS DEL AUR---
-# yay -S --needed megasync-bin
 yay -S --needed ani-cli
 yay -S --needed autotiling-rs-git
+yay -S --needed spotdl
+yay -S --needed gradience-git
+yay -S --needed caffeine-ng
+yay -S --needed automounter
+
 # flatpaks
 # echo INSTALACIÓN DE flatpak Y VARIOS QUE UTILIZO
 # sudo pacman -S --needed flatpak
@@ -62,7 +59,7 @@ yay -S --needed autotiling-rs-git
 # VirtualBox
 echo ---INSTALACIÓN DE virtualbox, dkms Y linux-lts-headers NECESARIO PARA MÁQUINAS VIRTUALES---
 sudo pacman -S --needed virtualbox dkms linux-lts-headers
-sudo modprober vboxdrv
+# sudo modprober vboxdrv
 
 # Crackling en Pipewire (solución)
 sudo echo 2048 > /sys/class/rtc/rtc0/max_user_freq
