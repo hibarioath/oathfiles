@@ -29,5 +29,3 @@ filetype plugin indent on    " required
 syntax on
 set shell=/bin/bash
 set number
-#set lazyredraw
-#set cursorline
