@@ -8,17 +8,17 @@
 * {
     font:   "Hurmit Nerd Font 11";
 
-    nord0:     #101015;
+    nord0:     #282828;
     nord1:     #3b4252;
     nord2:     #434c5e;
     nord3:     #4c566a;
 
-    nord4:     #cee0ec;
+    nord4:     #ebdbb2;
     nord5:     #e5e9f0;
     nord6:     #eceff4;
 
     nord7:     #8fbcbb;
-    nord8:     #92cbee;
+    nord8:     #b16286;
     nord9:     #81a1c1;
     nord10:    #5e81ac;
     nord11:    #bf616a;
@@ -42,7 +42,7 @@ window {
     border-color:       @accent-color;
 
     location:   center;
-    width:      900px;
+    width:      400px;
     border:     3px;
 }
 
@@ -61,8 +61,8 @@ prompt {
 }
 
 listview {
-    lines:      8;
-    columns:    2;
+    lines:      4;
+    columns:    1;
 
     fixed-height:   false;
 }
