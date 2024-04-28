@@ -1,7 +1,7 @@
 # Actualización del sistema y paquetes básicos
 cd ~/
 sudo pacman -Syu
-sudo pacman -S --needed git wget xarchiver gparted htop neofetch fish links man-db ntfs-3g exfatprogs vim plocate ufw android-tools openssh gvfs
+sudo pacman -S --needed git network-manager-applet wget xarchiver gparted htop neofetch fish links man-db ntfs-3g exfatprogs vim plocate ufw android-tools openssh gvfs
 
 # Instalación de yay-bin
 echo ---INSTALACIÓN DE yay-bin PARA USAR EL AUR---
@@ -35,8 +35,9 @@ sudo mkdir /usr/share/themes/ /usr/share/rofi/themes/
 sudo cp -rfv nord.rasi /usr/share/rofi/themes/
 cd ..
 
+
 # Dependencias (polybar)
-yay -S yad playerctl
+yay -S yad playerctl pacman-contrib
 
 # Fuentes
 yay -S --needed noto-fonts-cjk ttf-noto-emoji-monochrome otf-hermit-nerd ttf-ms-fonts
