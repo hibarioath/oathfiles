@@ -18,12 +18,15 @@ exec_always --no-startup-id autotiling-rs
 exec_always --no-startup-id xfce4-screensaver
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
+bindsym $mod+x exec rofi -show window
+bindsym $mod+g exec gimp
 bindsym $mod+p exec pavucontrol
 bindsym $mod+j exec firefox
 bindsym $mod+t exec torbrowser-launcher
 bindsym $mod+l exec lxappearance
 bindsym $mod+k exec keepassxc
 bindsym $mod+v exec virtualbox
+bindsym $mod+s exec steam
 
 #exec --no-startup-id nm-applet
 exec --no-startup-id nitrogen --restore
@@ -72,11 +75,6 @@ bindsym $mod+Shift+Right move right
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
-# change container layout (stacked, tabbed, toggle split)
-# bindsym $mod+s layout stacking
-# bindsym $mod+w layout tabbed
-# bindsym $mod+e layout toggle split
-
 # toggle tiling / floating
 bindsym $mod+space floating toggle
 
@@ -84,7 +82,7 @@ bindsym $mod+space floating toggle
 bindsym $mod+z focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+# bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -100,7 +98,7 @@ set $ws9 "9"
 set $ws10 "10"
 
 # switch to workspace
-bindsym $mod+1 workspace 1
+bindsym $mod+1 workspace "1"
 bindsym $mod+2 workspace 2
 bindsym $mod+3 workspace 3
 bindsym $mod+4 workspace 4
