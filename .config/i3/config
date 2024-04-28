@@ -13,17 +13,17 @@ exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
 exec --no-startup-id dunst
 # exec --no-startup-id syncthing
-exec_always --no-startup-id xfce4-power-manager
+# exec_always --no-startup-id xfce4-power-manager
 exec_always --no-startup-id autotiling-rs
-exec_always --no-startup-id xfce4-screensaver
+# exec_always --no-startup-id xfce4-screensaver
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 bindsym $mod+p exec pavucontrol
 bindsym $mod+j exec firefox
 
-exec --no-startup-id nm-applet
+#exec --no-startup-id nm-applet
 exec --no-startup-id nitrogen --restore
-exec --no-startup-id picom
+#exec --no-startup-id picom
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -138,7 +138,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # gaps outer 0
-gaps inner 5
+# gaps inner 0
 
 # Map the print key to xclip screenshot.
 bindsym Print exec "maim | xclip -selection clipboard -t image/png"
@@ -154,11 +154,11 @@ bindsym --release $mod+Shift+k exec "redshifter 3400K"
 bindsym --release $mod+Shift+l exec "redshifter 2700"
 
 # class                 border  backgr. text    indicator child_border
-client.focused           #d3869b #090e23 #35919b #d3869b   #d3869b
+client.focused           #fabd2f #090e23 #fabd2f #fabd2f   #fabd2f
 
 mouse_warping none
 
 default_floating_border pixel
-default_border pixel 2
+default_border pixel 1
 
 bindsym $mod+Shift+p exec systemctl suspend

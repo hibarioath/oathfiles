@@ -18,7 +18,7 @@
     nord6:     #eceff4;
 
     nord7:     #8fbcbb;
-    nord8:     #b16286;
+    nord8:     #fabd2f;
     nord9:     #81a1c1;
     nord10:    #5e81ac;
     nord11:    #bf616a;
@@ -42,8 +42,8 @@ window {
     border-color:       @accent-color;
 
     location:   center;
-    width:      400px;
-    border:     3px;
+    width:      500px;
+    border:     1px;
 }
 
 inputbar {
