@@ -12,14 +12,18 @@ font pango: Hurmit Nerd Font Regular 14
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
 exec --no-startup-id dunst
-# exec --no-startup-id syncthing
-# exec_always --no-startup-id xfce4-power-manager
+exec --no-startup-id syncthing
+exec_always --no-startup-id xfce4-power-manager
 exec_always --no-startup-id autotiling-rs
-# exec_always --no-startup-id xfce4-screensaver
+exec_always --no-startup-id xfce4-screensaver
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 bindsym $mod+p exec pavucontrol
 bindsym $mod+j exec firefox
+bindsym $mod+t exec torbrowser-launcher
+bindsym $mod+l exec lxappearance
+bindsym $mod+k exec keepassxc
+bindsym $mod+v exec virtualbox
 
 #exec --no-startup-id nm-applet
 exec --no-startup-id nitrogen --restore
@@ -60,18 +64,18 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+# bindsym $mod+h split h
 
 # split in vertical orientation
-bindsym $mod+v split v
+# bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+# bindsym $mod+s layout stacking
+# bindsym $mod+w layout tabbed
+# bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+space floating toggle
