@@ -6,19 +6,19 @@
  *******************************************************************************/
 
 * {
-    font:   "Hurmit Nerd Font 11";
+    font:   "Mononoki Nerd Font 11";
 
-    nord0:     #282828;
+    nord0:     #0f0a0c;
     nord1:     #3b4252;
     nord2:     #434c5e;
     nord3:     #4c566a;
 
-    nord4:     #ebdbb2;
+    nord4:     #e4dfea;
     nord5:     #e5e9f0;
     nord6:     #eceff4;
 
     nord7:     #8fbcbb;
-    nord8:     #fabd2f;
+    nord8:     #e5aa59;
     nord9:     #81a1c1;
     nord10:    #5e81ac;
     nord11:    #bf616a;
