@@ -21,6 +21,7 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 bindsym $mod+x exec rofi -show window
 bindsym $mod+g exec gimp
 bindsym $mod+p exec pavucontrol
+bindsym $mod+w exec librewolf
 bindsym $mod+j exec firefox
 bindsym $mod+t exec torbrowser-launcher
 bindsym $mod+l exec lxappearance
@@ -44,7 +45,7 @@ floating_modifier $mod
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
-tiling_drag modifier titlebar
+###tiling_drag modifier titlebar
 
 # start a terminal
 bindsym $mod+Return exec xfce4-terminal
@@ -140,7 +141,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # gaps outer 0
-# gaps inner 0
+# gaps inner 10
 
 # Map the print key to xclip screenshot.
 bindsym Print exec "maim | xclip -selection clipboard -t image/png"
