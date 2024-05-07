@@ -15,7 +15,6 @@ exec_always --no-startup-id xfce4-screensaver
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 bindsym $mod+Return exec alacritty
-bindsym $mod+x exec dmenu_run
 bindsym $mod+g exec gimp
 bindsym $mod+p exec pavucontrol
 bindsym $mod+j exec firefox
@@ -39,7 +38,7 @@ floating_modifier $mod
 
 bindsym $mod+q kill
 bindsym $mod+n exec --no-startup-id pcmanfm
-bindsym $mod+d exec --no-startup-id rofi -show drun
+bindsym $mod+d exec --no-startup-id dmenu_run
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
