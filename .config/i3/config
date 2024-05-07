@@ -2,34 +2,28 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango: Hurmit Nerd Font Regular 14
-
-# This font is widely installed, provides lots of unicode glyphs, right-to-left
-# text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
+font pango: Monospace 14
 
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
 exec --no-startup-id dunst
-exec --no-startup-id syncthing
+# exec --no-startup-id syncthing
 exec_always --no-startup-id xfce4-power-manager
 exec_always --no-startup-id autotiling-rs
 exec_always --no-startup-id xfce4-screensaver
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
-bindsym $mod+x exec rofi -show window
+bindsym $mod+Return exec alacritty
+bindsym $mod+x exec dmenu_run
 bindsym $mod+g exec gimp
 bindsym $mod+p exec pavucontrol
-bindsym $mod+w exec librewolf
 bindsym $mod+j exec firefox
-bindsym $mod+t exec torbrowser-launcher
 bindsym $mod+l exec lxappearance
 bindsym $mod+k exec keepassxc
 bindsym $mod+v exec virtualbox
-bindsym $mod+s exec steam
 
-#exec --no-startup-id nm-applet
+# exec --no-startup-id nm-applet
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id picom
 
@@ -43,14 +37,6 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# move tiling windows via drag & drop by left-clicking into the title bar,
-# or left-clicking anywhere into the window while holding the floating modifier.
-###tiling_drag modifier titlebar
-
-# start a terminal
-bindsym $mod+Return exec xfce4-terminal
-
-# kill focused window
 bindsym $mod+q kill
 bindsym $mod+n exec --no-startup-id pcmanfm
 bindsym $mod+d exec --no-startup-id rofi -show drun
@@ -67,26 +53,15 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-# split in horizontal orientation
-# bindsym $mod+h split h
+#bindsym $mod+h split h
+#bindsym $mod+v split v
 
-# split in vertical orientation
-# bindsym $mod+v split v
-
-# enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
-# toggle tiling / floating
 bindsym $mod+space floating toggle
-
-# change focus between tiling / floating windows
 bindsym $mod+z focus mode_toggle
 
-# focus the parent container
-# bindsym $mod+a focus parent
-
 # Define names for default workspaces for which we configure key bindings later on.
-# We use variables to avoid repeating the names in multiple places.
 set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
@@ -141,7 +116,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # gaps outer 0
-# gaps inner 10
+# gaps inner 5
 
 # Map the print key to xclip screenshot.
 bindsym Print exec "maim | xclip -selection clipboard -t image/png"
@@ -157,7 +132,7 @@ bindsym --release $mod+Shift+k exec "redshifter 3400K"
 bindsym --release $mod+Shift+l exec "redshifter 2700"
 
 # class                 border  backgr. text    indicator child_border
-client.focused           #e5aa59 #090e23 #e5aa59 #e5aa59   #e5aa59
+client.focused           #fabd2f #090e23 #fabd2f #fabd2f   #fabd2f
 
 mouse_warping none
 
