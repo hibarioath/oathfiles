@@ -1,5 +1,4 @@
 cd ~/
 cd .config/
-sudo cp -rfv /usr/share/rofi/themes/nord.rasi ~/oathfiles
-cp -rfv ~/.vimrc ~/oathfiles
-cp -rfv neofetch/ nitrogen/ kitty/ xfce4/ polybar/ i3/ dunst/ picom/ rofi/ ~/oathfiles/.config/
+cp -rfv ~/.vimrc .xinitrc ~/oathfiles 
+cp -rfv fastfetch/ nitrogen/ polybar/ i3/ dunst/ picom/ ~/oathfiles/.config/
