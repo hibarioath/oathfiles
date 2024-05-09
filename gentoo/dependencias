@@ -1,0 +1,24 @@
+libXinerama
+libxrandr
+xorg-server
+# gvfs
+# autofs
+redshift
+dunst
+mate-polkit
+# pcmanfm
+i3
+polybar
+lxappearance
+vim
+maim
+x11-misc/xclip
+picom
+sof-firmware
+linux-firmware
+xss-lock
+slock (suckless)
+dmenu (suckless)
+unclutter-xfixes
+# Brillo (chuletas con acpilight)
+# sudo xbacklight -set (0 a 1.0)
