@@ -106,7 +106,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # gaps outer 0
-# gaps inner 5
+# gaps inner 10
 
 # Map the print key to xclip screenshot.
 bindsym Print exec "maim | xclip -selection clipboard -t image/png"
@@ -129,4 +129,5 @@ mouse_warping none
 default_floating_border pixel
 default_border pixel 1
 
+bindsym $mod+Shift+h exec systemctl hibernate
 bindsym $mod+Shift+p exec systemctl suspend
