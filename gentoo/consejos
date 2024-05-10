@@ -1,0 +1,4 @@
+Ir probando con -jX en MAKEOPTS, quizá
+utilizar -j(nºnúcleos) y usar emerge --keep-going
+para que no acabe por error (usar emerge MAKEOPTS="valor"
+para cosas gordas rollo Firefox)
