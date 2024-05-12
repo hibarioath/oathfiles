@@ -1,5 +1,4 @@
 set $mod Mod4
-
 font pango: Monospace 14
 
 exec --no-startup-id dex --autostart --environment i3
@@ -17,10 +16,9 @@ bindsym $mod+j exec firefox
 bindsym $mod+l exec lxappearance
 bindsym $mod+k exec keepassxc
 bindsym $mod+b exec virtualbox
-
-bindsym $mod+q kill
 bindsym $mod+n exec --no-startup-id pcmanfm
 bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+q kill
 
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id xset s 600
@@ -108,15 +106,12 @@ bindsym $mod+r mode "resize"
 # gaps outer 0
 # gaps inner 10
 
-# Map the print key to xclip screenshot.
 bindsym Print exec "maim | xclip -selection clipboard -t image/png"
 bindsym $mod+Shift+s exec "maim --select | xclip -selection clipboard -t image/png"
 bindsym Shift+Print exec --no-startup-id maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
 
-# Map CMD+Shift+c to select color with xcolor
 bindsym --release $mod+Shift+c exec "xcolor -s clipboard"
 
-# Cambios de luz con redshifter
 #bindsym --release $mod+Shift+j exec "redshifter /"
 #bindsym --release $mod+Shift+k exec "redshifter 3400K"
 #bindsym --release $mod+Shift+l exec "redshifter 2700"
