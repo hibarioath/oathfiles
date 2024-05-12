@@ -1,4 +1,4 @@
-Ir probando con -jX en MAKEOPTS, quizá
-utilizar -j(nºnúcleos) y usar emerge --keep-going
-para que no acabe por error (usar emerge MAKEOPTS="valor"
-para cosas gordas rollo Firefox)
+Si hay un error 404 tratando de encontrar un paquete
+(como con sys-power/iasl en virtualbox) trata
+de usar mirror select (sudo emerge mirrorselect,
+mirrorselect -a)

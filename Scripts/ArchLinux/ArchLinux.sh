@@ -1,7 +1,7 @@
 # Actualización del sistema y paquetes básicos
 cd ~/
 sudo pacman -Syu
-sudo pacman -S --needed git networkmanager network-manager-applet wget xarchiver gparted htop neofetch fish links man-db ntfs-3g exfatprogs vim plocate ufw gvfs
+sudo pacman -S --needed git networkmanager network-manager-applet wget xarchiver gparted htop neofetch fish links man-db ntfs-3g exfatprogs vim plocate unclutter ufw
 
 # Instalación de yay-bin
 echo ---INSTALACIÓN DE yay-bin PARA USAR EL AUR---
@@ -11,14 +11,8 @@ cd yay-bin
 makepkg -si
 cd ..
 
-yay -S --needed blueman
 # i3, polybar, etc.
-sudo pacman -S --needed ly i3 btop polybar keepassxc dunst firefox xfce4-terminal galculator lxappearance maim xcolor xclip mate-polkit mousepad pcmanfm obs-studio pavucontrol libreoffice-fresh picom qbittorrent syncthing xfce4-screensaver nitrogen rofi unrar unzip feh mpv xdotool
-
-# ly display manager
-sudo systemctl enable ly
-
-sudo pacman -S --needed steam
+sudo pacman -S --needed i3 polybar keepassxc dunst firefox alacritty galculator lxappearance maim xcolor xclip mate-polkit pcmanfm pavucontrol libreoffice-fresh picom qbittorrent syncthing xss-lock unrar unzip feh mpv xdotool
 
 # Creación de varias carpetas
 mkdir Artema/ Saves/ Pictures/ Downloads/ Videos/ Music/ Documents/ Torrents/
@@ -26,25 +20,14 @@ mkdir Artema/ Saves/ Pictures/ Downloads/ Videos/ Music/ Documents/ Torrents/
 # TLP
 yay -S tlp tlp-rdw
 
-# Dependencias (polybar)
-# yay -S yad playerctl pacman-contrib
-
 # Fuentes
 yay -S --needed noto-fonts-cjk ttf-noto-emoji-monochrome ttf-dejavu-nerd otf-hermit-nerd ttf-ms-fonts
 
 yay -S redshifter
-sudo pacman -S --needed iwd
 yay -S --needed autotiling-rs-git
-# yay -S --needed automounter
 
-# VirtualBox
-# echo ---INSTALACIÓN DE virtualbox, dkms Y linux-lts-headers NECESARIO PARA MÁQUINAS VIRTUALES---
 # sudo pacman -S --needed virtualbox dkms linux-lts-headers
 # sudo modprober vboxdrv
-
-# Crackling en Pipewire (solución)
-# sudo echo 2048 > /sys/class/rtc/rtc0/max_user_freq
-# sudo echo 2048 > /proc/sys/dev/hpet/max-user-freq
 
 # ufw
 sudo ufw limit 22/tcp

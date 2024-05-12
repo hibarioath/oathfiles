@@ -3,7 +3,7 @@ import = [
 ]
 
 [font]
-size = 9
+size = 11
 [font.bold]
 family = "Monospace"
 [font.bold_italic]
