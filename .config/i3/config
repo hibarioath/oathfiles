@@ -4,6 +4,7 @@ font pango: Monospace 14
 exec --no-startup-id dex --autostart --environment i3
 exec_always --no-startup-id setxkbmap es
 exec --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
+exec --no-startup-id xfce4-power-manager
 exec --no-startup-id unclutter -idle 3
 exec --no-startup-id dunst
 exec_always --no-startup-id autotiling
@@ -15,15 +16,13 @@ bindsym $mod+p exec pavucontrol
 bindsym $mod+j exec firefox
 bindsym $mod+l exec lxappearance
 bindsym $mod+k exec keepassxc
-bindsym $mod+b exec virtualbox
+bindsym $mod+b exec virt-manager
 bindsym $mod+n exec --no-startup-id pcmanfm
 bindsym $mod+d exec --no-startup-id dmenu_run
 bindsym $mod+q kill
 
-exec --no-startup-id xfce4-power-manager
-exec --no-startup-id xset s 600
-exec --no-startup-id xss-lock slock
-exec --no-startup-id redshift -l 40:-3
+exec_always xautolock -detectsleep -time 10 -locker "i3lock -c 000000"
+exec --no-startup-id redshift -l 39.42:-0.26
 exec --no-startup-id ~/.fehbg
 exec --no-startup-id nm-applet
 exec --no-startup-id picom
@@ -104,7 +103,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # gaps outer 0
-# gaps inner 10
+# gaps inner 5
 
 bindsym Print exec "maim | xclip -selection clipboard -t image/png"
 bindsym $mod+Shift+s exec "maim --select | xclip -selection clipboard -t image/png"
@@ -112,17 +111,14 @@ bindsym Shift+Print exec --no-startup-id maim --window $(xdotool getactivewindow
 
 bindsym --release $mod+Shift+c exec "xcolor -s clipboard"
 
-#bindsym --release $mod+Shift+j exec "redshifter /"
-#bindsym --release $mod+Shift+k exec "redshifter 3400K"
-#bindsym --release $mod+Shift+l exec "redshifter 2700"
-
 # class                 border  backgr. text    indicator child_border
-client.focused           #fabd2f #090e23 #fabd2f #fabd2f   #fabd2f
+client.focused           #b200b2 #090e23 #b200b2 #b200b2   #b200b2
 
 mouse_warping none
 
 default_floating_border pixel
 default_border pixel 1
 
-bindsym $mod+Shift+h exec systemctl hibernate
-bindsym $mod+Shift+p exec systemctl suspend
+bindsym $mod+Shift+l exec --no-startup-id i3lock -c 000000
+bindsym $mod+Shift+h exec --no-startup-id ~/oathfiles/Scripts/hibernateslock.sh
+bindsym $mod+Shift+p exec --no-startup-id ~/oathfiles/Scripts/suspendslock.sh
