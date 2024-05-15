@@ -4,14 +4,14 @@
 static int topbar = 0;                      /* -b  option; if 0, dmenu appears at bottom     */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-	"monospace:size=12"
+	"More Perfect DOS VGA:size=13"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	[SchemeNorm] = { "#e5e5e5", "#000000" },
-	[SchemeSel] = { "#e5e5e5", "#b200b2" },
-	[SchemeOut] = { "#e5e5e5", "#000000" },
+	[SchemeNorm] = { "#edecee", "#15141b" },
+	[SchemeSel] = { "#edecee", "#a277ff" },
+	[SchemeOut] = { "#edecee", "#15141b" },
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 0;

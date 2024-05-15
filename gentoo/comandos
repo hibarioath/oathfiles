@@ -1,0 +1,15 @@
+# Ver todos los paquetes instalados
+# con Portage directamente (explícitos)
+cat /var/lib/portage/world | less
+
+# Adicionalmente, Porthole es un frontend
+# GUI para Portage
+
+# Eliminar todos los distfiles (absolutamente
+# todos)
+eclean-dist --destructive
+# De todas formas, esto es un poco arriesgado
+# y nos sobra espacio en disco, así que bueno.
+# Adicionalmente se puede eliminar (en caso de que
+# se haya parado un emerge y queden archivos residuales)
+# /var/tmp/portage.
