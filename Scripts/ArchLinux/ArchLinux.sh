@@ -1,7 +1,7 @@
 # Actualización del sistema y paquetes básicos
 cd ~/
 sudo pacman -Syu
-sudo pacman -S --needed git networkmanager network-manager-applet wget xarchiver gparted htop neofetch fish links man-db ntfs-3g exfatprogs vim plocate unclutter ufw
+sudo pacman -S --needed git networkmanager network-manager-applet wget xarchiver gparted htop fastfetch fish links man-db ntfs-3g exfatprogs vim plocate unclutter ufw
 
 # Instalación de yay-bin
 echo ---INSTALACIÓN DE yay-bin PARA USAR EL AUR---
@@ -12,7 +12,7 @@ makepkg -si
 cd ..
 
 # i3, polybar, etc.
-sudo pacman -S --needed i3 polybar keepassxc dunst firefox alacritty galculator lxappearance maim xcolor xclip mate-polkit pcmanfm pavucontrol libreoffice-fresh picom qbittorrent syncthing xss-lock unrar unzip feh mpv xdotool
+sudo pacman -S --needed i3 polybar keepassxc dunst firefox alacritty lxappearance maim xcolor xclip redshift mate-polkit pcmanfm pavucontrol libreoffice-still picom qbittorrent syncthing xautolock i3lock unrar unzip feh mpv xdotool
 
 # Creación de varias carpetas
 mkdir Artema/ Saves/ Pictures/ Downloads/ Videos/ Music/ Documents/ Torrents/
@@ -21,9 +21,8 @@ mkdir Artema/ Saves/ Pictures/ Downloads/ Videos/ Music/ Documents/ Torrents/
 yay -S tlp tlp-rdw
 
 # Fuentes
-yay -S --needed noto-fonts-cjk ttf-noto-emoji-monochrome ttf-dejavu-nerd otf-hermit-nerd ttf-ms-fonts
+# yay -S --needed noto-fonts-cjk ttf-noto-emoji-monochrome ttf-dejavu-nerd otf-hermit-nerd ttf-ms-fonts
 
-yay -S redshifter
 yay -S --needed autotiling-rs-git
 
 # sudo pacman -S --needed virtualbox dkms linux-lts-headers

@@ -1,2 +1,2 @@
-yay -Qdtq | pacman -Rns -
-yay -Qqd | pacman -Rsu -
+yay -Qdtq | yay -Rns -
+yay -Qqd | yay -Rsu -
