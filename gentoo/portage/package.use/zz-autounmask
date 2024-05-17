@@ -78,3 +78,16 @@
 # required by @selected
 # required by @world (argument)
 >=net-misc/spice-gtk-0.42-r3 usbredir
+# required by www-client/torbrowser-launcher-0.3.7::torbrowser
+# required by torbrowser-launcher (argument)
+>=x11-libs/gtk+-3.24.41 wayland
+# required by www-client/torbrowser-launcher-0.3.7::torbrowser
+# required by torbrowser-launcher (argument)
+>=app-crypt/gpgme-1.23.2 python
+# required by www-client/torbrowser-launcher-0.3.7::torbrowser
+# required by torbrowser-launcher (argument)
+>=dev-python/PyQt5-5.15.10-r1 widgets
+# required by x11-libs/gtk+-3.24.41::gentoo[wayland]
+# required by www-client/torbrowser-launcher-0.3.7::torbrowser
+# required by torbrowser-launcher (argument)
+>=media-libs/mesa-24.0.7 wayland

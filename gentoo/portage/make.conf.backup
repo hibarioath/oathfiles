@@ -34,5 +34,3 @@ PORTAGE_SCHEDULING_POLICY="idle"
 
 LC_MESSAGES=C.utf8
 # ACCEPT_KEYWORDS="~amd64"
-GENTOO_MIRRORS="http://tux.rainside.sk/gentoo/ \
-    ftp://tux.rainside.sk/gentoo/"
