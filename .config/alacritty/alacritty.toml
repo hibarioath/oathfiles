@@ -5,13 +5,13 @@ import = [
 [font]
 size = 11
 [font.bold]
-family = "Ubuntu Mono Nerd Font"
+family = "Monospace"
 [font.bold_italic]
-family = "Ubuntu Mono Nerd Font"
+family = "Monospace"
 [font.italic]
-family = "Ubuntu Mono Nerd Font"
+family = "Monospace"
 [font.normal]
-family = "Ubuntu Mono Nerd Font"
+family = "Monospace"
 
 [window]
 opacity = 1.00
