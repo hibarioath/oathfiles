@@ -1,4 +1,0 @@
-Si hay un error 404 tratando de encontrar un paquete
-(como con sys-power/iasl en virtualbox) trata
-de usar mirror select (sudo emerge mirrorselect,
-mirrorselect -a)
