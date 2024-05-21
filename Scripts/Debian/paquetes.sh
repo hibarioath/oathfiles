@@ -6,4 +6,6 @@ sudo nala fetch
 
 sudo apt install alacritty git vim htop fish
 
+sudo apt install tlp tlp-rdw
+
 sudo apt install i3 i3lock autotiling polybar pcmanfm feh mpv ufw
