@@ -4,15 +4,10 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'godlygeek/tabular'
 Plugin 'preservim/vim-markdown'
 Plugin 'chaimleib/vim-renpy'
-Plugin 'morhetz/gruvbox'
-" The following are examples of different formats supported.
-Plugin 'tpope/vim-fugitive'
-Plugin 'git://git.wincent.com/command-t.git'
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-
+" Plugin 'morhetz/gruvbox'
+Plugin 'ap/vim-css-color'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
