@@ -5,13 +5,13 @@ import = [
 [font]
 size = 11
 [font.bold]
-family = "Monospace"
+family = "JetBrains Mono Nerd Font"
 [font.bold_italic]
-family = "Monospace"
+family = "JetBrains Mono Nerd Font"
 [font.italic]
-family = "Monospace"
+family = "JetBrains Mono Nerd Font"
 [font.normal]
-family = "Monospace"
+family = "JetBrains Mono Nerd Font"
 
 [window]
 opacity = 1.00

@@ -9,6 +9,7 @@ exec --no-startup-id unclutter -idle 3
 exec --no-startup-id dunst
 exec_always --no-startup-id autotiling
 exec --no-startup-id ~/.config/polybar/launch.sh
+#exec_always --no-startup-id wal -R
 
 bindsym $mod+Return exec alacritty
 bindsym $mod+g exec gimp
@@ -22,7 +23,8 @@ bindsym $mod+d exec --no-startup-id dmenu_run
 bindsym $mod+q kill
 
 exec_always xautolock -detectsleep -time 10 -locker "i3lock -c 000000"
-exec --no-startup-id ~/Artema/Scripts/redshift.sh
+exec --no-startup-id ~/Artema/Scripts/redshift2.sh
+#exec --no-startup-id ~/Artema/Scripts/redshift.sh
 exec --no-startup-id ~/.fehbg
 exec --no-startup-id nm-applet
 exec --no-startup-id picom
@@ -108,8 +110,8 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# gaps outer 0
-# gaps inner 5
+#gaps outer 5
+#gaps inner 5
 
 bindsym Print exec "maim | xclip -selection clipboard -t image/png"
 bindsym $mod+Shift+s exec "maim --select | xclip -selection clipboard -t image/png"
