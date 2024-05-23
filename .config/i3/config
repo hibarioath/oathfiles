@@ -7,7 +7,7 @@ exec --no-startup-id /usr/libexec/polkit-mate-authentication-agent-1
 exec --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
 exec --no-startup-id unclutter -idle 3
 exec --no-startup-id dunst
-exec_always --no-startup-id autotiling-rs
+exec_always --no-startup-id autotiling
 exec --no-startup-id ~/.config/polybar/launch.sh
 
 bindsym $mod+Return exec alacritty
@@ -109,8 +109,8 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-#gaps outer 5
-gaps inner 5
+# gaps outer 5
+# gaps inner 5
 
 bindsym Print exec "maim | xclip -selection clipboard -t image/png"
 bindsym $mod+Shift+s exec "maim --select | xclip -selection clipboard -t image/png"

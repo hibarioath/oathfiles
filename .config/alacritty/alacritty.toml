@@ -14,7 +14,7 @@ family = "JetBrains Mono Nerd Font"
 family = "JetBrains Mono Nerd Font"
 
 [window]
-opacity = 0.90
+# opacity = 0.90
 
 [window.padding]
 x = 12
