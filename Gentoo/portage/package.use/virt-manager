@@ -1,1 +1,4 @@
+>=net-misc/spice-gtk-0.42-r4 usbredir
+>=net-libs/gnutls-3.8.5-r1 tools pkcs11
+net-dns/dnsmasq script
 app-emulation/virt-manager gui

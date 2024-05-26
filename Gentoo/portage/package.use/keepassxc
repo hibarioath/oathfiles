@@ -1,1 +1,2 @@
 app-admin/keepassxc -network
+dev-qt/qtwidgets dbus

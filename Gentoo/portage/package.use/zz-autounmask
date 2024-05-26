@@ -1,93 +1,656 @@
+# required by x11-misc/polybar-3.7.1-r1::gentoo[python_single_target_python3_12]
+# required by polybar (argument)
+>=x11-base/xcb-proto-1.17.0 python_targets_python3_12
+# required by dev-util/gdbus-codegen-2.78.6::gentoo[python_single_target_python3_12]
+# required by media-video/wireplumber-0.4.17-r1::gentoo
+# required by media-video/pipewire-1.0.5::gentoo
+# required by media-libs/libpulse-17.0::gentoo
+# required by media-libs/libcanberra-0.30-r7::gentoo[pulseaudio]
+>=dev-python/setuptools-69.5.1-r1 python_targets_python3_12
+# required by dev-python/setuptools-69.5.1-r1::gentoo
+# required by dev-python/mako-1.3.3::gentoo
+# required by media-libs/mesa-24.0.7::gentoo
+# required by x11-base/xorg-server-21.1.13-r1::gentoo[-minimal]
+# required by x11-drivers/xf86-input-libinput-1.4.0::gentoo
+# required by x11-base/xorg-drivers-21.1-r2::gentoo[input_devices_libinput]
+>=dev-python/jaraco-text-3.12.0 python_targets_python3_12
+# required by dev-python/setuptools-69.5.1-r1::gentoo
+# required by dev-python/mako-1.3.3::gentoo
+# required by media-libs/mesa-24.0.7::gentoo
+# required by x11-base/xorg-server-21.1.13-r1::gentoo[-minimal]
+# required by x11-drivers/xf86-input-libinput-1.4.0::gentoo
+# required by x11-base/xorg-drivers-21.1-r2::gentoo[input_devices_libinput]
+>=dev-python/more-itertools-10.2.0 python_targets_python3_12
+# required by dev-python/setuptools-69.5.1-r1::gentoo
+# required by dev-python/mako-1.3.3::gentoo
+# required by media-libs/mesa-24.0.7::gentoo
+# required by x11-base/xorg-server-21.1.13-r1::gentoo[-minimal]
+# required by x11-drivers/xf86-input-libinput-1.4.0::gentoo
+# required by x11-base/xorg-drivers-21.1-r2::gentoo[input_devices_libinput]
+>=dev-python/ordered-set-4.1.0 python_targets_python3_12
+# required by dev-python/setuptools-69.5.1-r1::gentoo
+# required by dev-python/mako-1.3.3::gentoo
+# required by media-libs/mesa-24.0.7::gentoo
+# required by x11-base/xorg-server-21.1.13-r1::gentoo[-minimal]
+# required by x11-drivers/xf86-input-libinput-1.4.0::gentoo
+# required by x11-base/xorg-drivers-21.1-r2::gentoo[input_devices_libinput]
+>=dev-python/packaging-24.0 python_targets_python3_12
+# required by dev-python/setuptools-69.5.1-r1::gentoo
+# required by dev-python/mako-1.3.3::gentoo
+# required by media-libs/mesa-24.0.7::gentoo
+# required by x11-base/xorg-server-21.1.13-r1::gentoo[-minimal]
+# required by x11-drivers/xf86-input-libinput-1.4.0::gentoo
+# required by x11-base/xorg-drivers-21.1-r2::gentoo[input_devices_libinput]
+>=dev-python/platformdirs-4.2.1 python_targets_python3_12
+# required by dev-python/setuptools-69.5.1-r1::gentoo
+# required by dev-python/mako-1.3.3::gentoo
+# required by media-libs/mesa-24.0.7::gentoo
+# required by x11-base/xorg-server-21.1.13-r1::gentoo[-minimal]
+# required by x11-drivers/xf86-input-libinput-1.4.0::gentoo
+# required by x11-base/xorg-drivers-21.1-r2::gentoo[input_devices_libinput]
+>=dev-python/wheel-0.43.0 python_targets_python3_12
+# required by dev-python/setuptools-69.5.1-r1::gentoo
+# required by dev-python/mako-1.3.3::gentoo
+# required by media-libs/mesa-24.0.7::gentoo
+# required by x11-base/xorg-server-21.1.13-r1::gentoo[-minimal]
+# required by x11-drivers/xf86-input-libinput-1.4.0::gentoo
+# required by x11-base/xorg-drivers-21.1-r2::gentoo[input_devices_libinput]
+>=dev-python/setuptools-scm-8.0.4 python_targets_python3_12
+# required by dev-python/flit-core-3.9.0::gentoo
+# required by dev-python/docutils-0.21.2::gentoo
+# required by gnome-base/librsvg-2.57.3::gentoo
+# required by x11-themes/adwaita-icon-theme-45.0::gentoo
+# required by x11-libs/gtk+-3.24.41::gentoo
+# required by media-libs/libcanberra-0.30-r7::gentoo[gtk3]
+# required by media-video/pipewire-1.0.5::gentoo[X]
+# required by media-video/wireplumber-0.4.17-r1::gentoo
+>=dev-python/gpep517-15 python_targets_python3_12
+# required by dev-python/gpep517-15::gentoo
+# required by dev-python/mako-1.3.3::gentoo
+# required by media-libs/mesa-24.0.7::gentoo
+# required by x11-base/xorg-server-21.1.13-r1::gentoo[-minimal]
+# required by x11-drivers/xf86-input-libinput-1.4.0::gentoo
+# required by x11-base/xorg-drivers-21.1-r2::gentoo[input_devices_libinput]
+>=dev-python/installer-0.7.0 python_targets_python3_12
+# required by dev-python/setuptools-scm-8.0.4::gentoo
+# required by dev-python/setuptools-69.5.1-r1::gentoo
+# required by dev-python/mako-1.3.3::gentoo
+# required by media-libs/mesa-24.0.7::gentoo
+# required by x11-base/xorg-server-21.1.13-r1::gentoo[-minimal]
+# required by x11-drivers/xf86-input-libinput-1.4.0::gentoo
+# required by x11-base/xorg-drivers-21.1-r2::gentoo[input_devices_libinput]
+>=dev-python/typing-extensions-4.11.0 python_targets_python3_12
+# required by dev-python/jaraco-functools-4.0.1::gentoo
+# required by dev-python/jaraco-text-3.12.0::gentoo
+# required by dev-python/setuptools-69.5.1-r1::gentoo
+# required by dev-python/mako-1.3.3::gentoo
+# required by media-libs/mesa-24.0.7::gentoo
+# required by x11-base/xorg-server-21.1.13-r1::gentoo[-minimal]
+# required by x11-drivers/xf86-input-libinput-1.4.0::gentoo
+# required by x11-base/xorg-drivers-21.1-r2::gentoo[input_devices_libinput]
+>=dev-python/flit-core-3.9.0 python_targets_python3_12
+# required by dev-python/jaraco-text-3.12.0::gentoo
+# required by dev-python/setuptools-69.5.1-r1::gentoo
+# required by dev-python/mako-1.3.3::gentoo
+# required by media-libs/mesa-24.0.7::gentoo
+# required by x11-base/xorg-server-21.1.13-r1::gentoo[-minimal]
+# required by x11-drivers/xf86-input-libinput-1.4.0::gentoo
+# required by x11-base/xorg-drivers-21.1-r2::gentoo[input_devices_libinput]
+>=dev-python/jaraco-context-5.3.0 python_targets_python3_12
+# required by dev-python/jaraco-text-3.12.0::gentoo
+# required by dev-python/setuptools-69.5.1-r1::gentoo
+# required by dev-python/mako-1.3.3::gentoo
+# required by media-libs/mesa-24.0.7::gentoo
+# required by x11-base/xorg-server-21.1.13-r1::gentoo[-minimal]
+# required by x11-drivers/xf86-input-libinput-1.4.0::gentoo
+# required by x11-base/xorg-drivers-21.1-r2::gentoo[input_devices_libinput]
+>=dev-python/jaraco-functools-4.0.1 python_targets_python3_12
 # required by x11-misc/pcmanfm-1.3.2-r1::gentoo
 # required by pcmanfm (argument)
 >=x11-libs/libfm-1.3.2-r1 gtk
+# required by sys-libs/libblockdev-3.0.4::gentoo[python_single_target_python3_12]
+# required by sys-fs/udisks-2.10.1::gentoo
+# required by gnome-base/gvfs-1.52.2::gentoo[udisks]
+# required by x11-libs/libfm-1.3.2-r1::gentoo[udisks,automount]
+# required by x11-misc/pcmanfm-1.3.2-r1::gentoo
+# required by pcmanfm (argument)
+>=dev-python/pygobject-3.46.0 python_targets_python3_12
+# required by dev-python/pygobject-3.46.0::gentoo[cairo]
+# required by sys-libs/libblockdev-3.0.4::gentoo[python_single_target_python3_12]
+# required by sys-fs/udisks-2.10.1::gentoo
+# required by gnome-base/gvfs-1.52.2::gentoo[udisks]
+# required by x11-libs/libfm-1.3.2-r1::gentoo[udisks,automount]
+# required by x11-misc/pcmanfm-1.3.2-r1::gentoo
+# required by pcmanfm (argument)
+>=dev-python/pycairo-1.26.0 python_targets_python3_12
+# required by sys-apps/systemd-255.4::gentoo[python_single_target_python3_12]
+# required by sys-auth/polkit-123::gentoo[systemd]
+# required by sys-fs/udisks-2.10.1::gentoo
+# required by gnome-base/gvfs-1.52.2::gentoo[udisks]
+# required by x11-libs/libfm-1.3.2-r1::gentoo[udisks,automount]
+# required by x11-misc/pcmanfm-1.3.2-r1::gentoo
+# required by pcmanfm (argument)
+>=dev-python/jinja-3.1.3 python_targets_python3_12
+# required by sys-apps/systemd-255.4::gentoo[python_single_target_python3_12]
+# required by sys-auth/polkit-123::gentoo[systemd]
+# required by sys-fs/udisks-2.10.1::gentoo
+# required by gnome-base/gvfs-1.52.2::gentoo[udisks]
+# required by x11-libs/libfm-1.3.2-r1::gentoo[udisks,automount]
+# required by x11-misc/pcmanfm-1.3.2-r1::gentoo
+# required by pcmanfm (argument)
+>=dev-python/lxml-5.2.1 python_targets_python3_12
+# required by dev-python/lxml-5.2.1::gentoo
+# required by sys-apps/systemd-255.4::gentoo[python_single_target_python3_12]
+# required by sys-auth/polkit-123::gentoo[systemd]
+# required by sys-fs/udisks-2.10.1::gentoo
+# required by gnome-base/gvfs-1.52.2::gentoo[udisks]
+# required by x11-libs/libfm-1.3.2-r1::gentoo[udisks,automount]
+# required by x11-misc/pcmanfm-1.3.2-r1::gentoo
+# required by pcmanfm (argument)
+>=dev-python/cython-3.0.10 python_targets_python3_12
+# required by dev-python/jinja-3.1.3::gentoo
+# required by sys-apps/systemd-255.4::gentoo[python_single_target_python3_12]
+# required by sys-auth/polkit-123::gentoo[systemd]
+# required by sys-fs/udisks-2.10.1::gentoo
+# required by gnome-base/gvfs-1.52.2::gentoo[udisks]
+# required by x11-libs/libfm-1.3.2-r1::gentoo[udisks,automount]
+# required by x11-misc/pcmanfm-1.3.2-r1::gentoo
+# required by pcmanfm (argument)
+>=dev-python/markupsafe-2.1.5 python_targets_python3_12
 # required by gnome-base/gnome-keyring-42.1-r2::gentoo
 # required by virtual/secret-service-0::gentoo
 # required by app-crypt/libsecret-0.21.1::gentoo
 >=app-crypt/gcr-3.41.1-r2:0 gtk
+# required by x11-misc/autotiling-1.9.2::guru[python_single_target_python3_12]
+# required by autotiling (argument)
+>=dev-python/i3ipc-2.2.1-r1 python_targets_python3_12
+# required by dev-python/i3ipc-2.2.1-r1::guru[-test]
+# required by x11-misc/autotiling-1.9.2::guru[python_single_target_python3_12]
+# required by autotiling (argument)
+>=dev-python/python-xlib-0.33 python_targets_python3_12
+# required by dev-python/python-xlib-0.33::gentoo[-test]
+# required by dev-python/i3ipc-2.2.1-r1::guru[-test]
+# required by x11-misc/autotiling-1.9.2::guru[python_single_target_python3_12]
+# required by autotiling (argument)
+>=dev-python/six-1.16.0-r1 python_targets_python3_12
+# required by app-admin/keepassxc-2.7.8::gentoo
+# required by keepassxc (argument)
+>=sys-libs/zlib-1.3.1-r1 minizip
+# required by x11-misc/xdg-utils-1.2.1-r1::gentoo
+# required by x11-misc/dunst-1.11.0::gentoo
+# required by virtual/notification-daemon-0::gentoo[-gnome,-kde]
+# required by x11-libs/libnotify-0.8.3::gentoo
+>=app-text/xmlto-0.0.28-r11 text
+# required by www-client/firefox-126.0::gentoo[system-libvpx]
+# required by firefox (argument)
+>=media-libs/libvpx-1.14.0 postproc
+# required by x11-misc/pywal-3.3.0::guru
+# required by pywal (argument)
+>=media-gfx/imagemagick-7.1.1.25 jpeg
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=media-libs/fontconfig-2.15.0 abi_x86_32
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=sys-libs/libudev-compat-186-r1 abi_x86_32
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay[pulseaudio]
+# required by steam-launcher (argument)
+>=media-libs/libpulse-17.0 abi_x86_32
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay[video_cards_nvidia]
+# required by steam-launcher (argument)
+>=x11-drivers/nvidia-drivers-550.78 abi_x86_32
+# required by media-libs/mesa-24.1.0-r1::gentoo
+# required by virtual/opengl-7.0-r2::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=media-libs/libglvnd-1.7.0 abi_x86_32
+# required by x11-libs/libXrender-0.9.11::gentoo
+# required by x11-libs/libXrandr-1.5.4::gentoo
+# required by media-libs/mesa-24.1.0-r1::gentoo[X]
+# required by virtual/opengl-7.0-r2::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=x11-libs/libX11-1.8.9 abi_x86_32
+# required by x11-libs/libXxf86vm-1.1.5::gentoo
+# required by media-libs/mesa-24.1.0-r1::gentoo[X]
+# required by virtual/opengl-7.0-r2::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=x11-libs/libXext-1.3.6 abi_x86_32
+# required by media-libs/mesa-24.1.0-r1::gentoo[X]
+# required by virtual/opengl-7.0-r2::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=x11-libs/libxcb-1.17.0 abi_x86_32
+# required by x11-libs/libxcb-1.17.0::gentoo
+# required by x11-libs/xcb-util-keysyms-0.4.1::gentoo
+# required by media-libs/mesa-24.1.0-r1::gentoo[X]
+# required by virtual/opengl-7.0-r2::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=x11-libs/libXau-1.0.11 abi_x86_32
+# required by x11-libs/libxcb-1.17.0::gentoo
+# required by x11-libs/xcb-util-keysyms-0.4.1::gentoo
+# required by media-libs/mesa-24.1.0-r1::gentoo[X]
+# required by virtual/opengl-7.0-r2::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=x11-libs/libXdmcp-1.1.5 abi_x86_32
+# required by media-libs/libpulse-17.0::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay[pulseaudio]
+# required by steam-launcher (argument)
+>=media-libs/libsndfile-1.2.2-r2 abi_x86_32
+# required by media-libs/libpulse-17.0::gentoo[asyncns]
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay[pulseaudio]
+# required by steam-launcher (argument)
+>=net-libs/libasyncns-0.8-r4 abi_x86_32
+# required by media-libs/libpulse-17.0::gentoo[glib]
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay[pulseaudio]
+# required by steam-launcher (argument)
+>=dev-libs/glib-2.78.6 abi_x86_32
+# required by dev-libs/glib-2.78.6::gentoo
+# required by media-libs/libpulse-17.0::gentoo[glib]
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay[pulseaudio]
+# required by steam-launcher (argument)
+>=dev-libs/libpcre2-10.43 abi_x86_32
+# required by sys-devel/llvm-17.0.6::gentoo[libffi]
+# required by media-libs/mesa-24.1.0-r1::gentoo[llvm_slot_17,llvm]
+# required by virtual/opengl-7.0-r2::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=dev-libs/libffi-3.4.6 abi_x86_32
+# required by sys-devel/llvm-17.0.6::gentoo
+# required by media-libs/mesa-24.1.0-r1::gentoo[llvm_slot_17,llvm]
+# required by virtual/opengl-7.0-r2::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=sys-libs/zlib-1.3.1-r1 abi_x86_32
+# required by sys-apps/systemd-255.6::gentoo
+# required by virtual/libudev-251-r2::gentoo
+# required by sys-libs/libudev-compat-186-r1::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=sys-apps/util-linux-2.40.1-r3 abi_x86_32
+# required by media-libs/libsndfile-1.2.2-r2::gentoo[-minimal]
+# required by media-libs/libpulse-17.0::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay[pulseaudio]
+# required by steam-launcher (argument)
+>=media-libs/flac-1.4.3 abi_x86_32
+# required by media-libs/libvorbis-1.3.7-r1::gentoo
+# required by media-libs/libsndfile-1.2.2-r2::gentoo[-minimal]
+# required by media-libs/libpulse-17.0::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay[pulseaudio]
+# required by steam-launcher (argument)
+>=media-libs/libogg-1.3.5-r1 abi_x86_32
+# required by media-libs/libsndfile-1.2.2-r2::gentoo[-minimal]
+# required by media-libs/libpulse-17.0::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay[pulseaudio]
+# required by steam-launcher (argument)
+>=media-libs/libvorbis-1.3.7-r1 abi_x86_32
+# required by media-libs/libsndfile-1.2.2-r2::gentoo[-minimal]
+# required by media-libs/libpulse-17.0::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay[pulseaudio]
+# required by steam-launcher (argument)
+>=media-libs/opus-1.5.2 abi_x86_32
+# required by media-libs/libsndfile-1.2.2-r2::gentoo[-minimal]
+# required by media-libs/libpulse-17.0::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay[pulseaudio]
+# required by steam-launcher (argument)
+>=media-sound/lame-3.100-r3 abi_x86_32
+# required by media-libs/libsndfile-1.2.2-r2::gentoo[-minimal]
+# required by media-libs/libpulse-17.0::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay[pulseaudio]
+# required by steam-launcher (argument)
+>=media-sound/mpg123-base-1.32.3 abi_x86_32
+# required by media-libs/mesa-24.1.0-r1::gentoo
+# required by virtual/opengl-7.0-r2::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=dev-libs/expat-2.6.2 abi_x86_32
+# required by media-libs/fontconfig-2.15.0::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=media-libs/freetype-2.13.2 abi_x86_32
+# required by media-libs/freetype-2.13.2::gentoo[bzip2]
+# required by media-libs/fontconfig-2.15.0::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=app-arch/bzip2-1.0.8-r5 abi_x86_32
+# required by media-libs/freetype-2.13.2::gentoo[png]
+# required by media-libs/fontconfig-2.15.0::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=media-libs/libpng-1.6.43 abi_x86_32
+# required by dev-libs/glib-2.78.6::gentoo
+# required by media-libs/libpulse-17.0::gentoo[glib]
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay[pulseaudio]
+# required by steam-launcher (argument)
+>=virtual/libintl-0-r2 abi_x86_32
+# required by sys-libs/libudev-compat-186-r1::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=virtual/libudev-251-r2 abi_x86_32
+# required by virtual/libudev-251-r2::gentoo
+# required by sys-apps/util-linux-2.40.1-r3::gentoo
+# required by media-libs/fontconfig-2.15.0::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=sys-apps/systemd-255.6 abi_x86_32
+# required by sys-apps/systemd-255.6::gentoo
+# required by virtual/libudev-251-r2::gentoo
+# required by sys-apps/util-linux-2.40.1-r3::gentoo
+# required by media-libs/fontconfig-2.15.0::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=sys-libs/libcap-2.70 abi_x86_32
+# required by sys-apps/systemd-255.6::gentoo[gcrypt]
+# required by virtual/libudev-251-r2::gentoo
+# required by sys-apps/util-linux-2.40.1-r3::gentoo
+# required by media-libs/fontconfig-2.15.0::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=dev-libs/libgcrypt-1.10.3-r2 abi_x86_32
+# required by sys-apps/systemd-255.6::gentoo[lz4]
+# required by virtual/libudev-251-r2::gentoo
+# required by sys-apps/util-linux-2.40.1-r3::gentoo
+# required by media-libs/fontconfig-2.15.0::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=app-arch/lz4-1.9.4 abi_x86_32
+# required by sys-apps/systemd-255.6::gentoo[pam]
+# required by virtual/libudev-251-r2::gentoo
+# required by sys-apps/util-linux-2.40.1-r3::gentoo
+# required by media-libs/fontconfig-2.15.0::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=sys-libs/pam-1.6.1 abi_x86_32
+# required by sys-apps/systemd-255.6::gentoo[zstd]
+# required by virtual/libudev-251-r2::gentoo
+# required by sys-apps/util-linux-2.40.1-r3::gentoo
+# required by media-libs/fontconfig-2.15.0::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=app-arch/zstd-1.5.6 abi_x86_32
+# required by dev-libs/libgcrypt-1.10.3-r2::gentoo
+# required by sys-apps/systemd-255.6::gentoo[gcrypt]
+# required by virtual/libudev-251-r2::gentoo
+# required by sys-apps/util-linux-2.40.1-r3::gentoo
+# required by media-libs/fontconfig-2.15.0::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=dev-libs/libgpg-error-1.49 abi_x86_32
+# required by dev-libs/glib-2.78.6::gentoo
+# required by media-libs/libpulse-17.0::gentoo[glib]
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay[pulseaudio]
+# required by steam-launcher (argument)
+>=virtual/libiconv-0-r2 abi_x86_32
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=virtual/opengl-7.0-r2 abi_x86_32
+# required by virtual/opengl-7.0-r2::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=media-libs/mesa-24.1.0-r1 abi_x86_32
+# required by media-libs/mesa-24.1.0-r1::gentoo[llvm_slot_17,llvm]
+# required by virtual/opengl-7.0-r2::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=sys-devel/llvm-17.0.6:17 abi_x86_32
+# required by media-libs/mesa-24.1.0-r1::gentoo
+# required by virtual/opengl-7.0-r2::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=x11-libs/libdrm-2.4.120 abi_x86_32
+# required by media-libs/mesa-24.1.0-r1::gentoo[X]
+# required by virtual/opengl-7.0-r2::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=x11-libs/libxshmfence-1.3.2 abi_x86_32
+# required by media-libs/mesa-24.1.0-r1::gentoo[X]
+# required by virtual/opengl-7.0-r2::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=x11-libs/libXxf86vm-1.1.5 abi_x86_32
+# required by media-libs/mesa-24.1.0-r1::gentoo[X]
+# required by virtual/opengl-7.0-r2::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=x11-libs/libXfixes-6.0.1 abi_x86_32
+# required by media-libs/mesa-24.1.0-r1::gentoo[X]
+# required by virtual/opengl-7.0-r2::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=x11-libs/xcb-util-keysyms-0.4.1 abi_x86_32
+# required by media-libs/mesa-24.1.0-r1::gentoo[X]
+# required by virtual/opengl-7.0-r2::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=x11-libs/libXrandr-1.5.4 abi_x86_32
+# required by x11-libs/libXrandr-1.5.4::gentoo
+# required by media-libs/mesa-24.1.0-r1::gentoo[X]
+# required by virtual/opengl-7.0-r2::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=x11-libs/libXrender-0.9.11 abi_x86_32
+# required by sys-devel/llvm-17.0.6::gentoo[ncurses]
+# required by media-libs/mesa-24.1.0-r1::gentoo[llvm_slot_17,llvm]
+# required by virtual/opengl-7.0-r2::gentoo
+# required by games-util/steam-launcher-1.0.0.79::steam-overlay
+# required by steam-launcher (argument)
+>=sys-libs/ncurses-6.4_p20240414 abi_x86_32
 # required by app-office/libreoffice-bin-7.6.4.1::gentoo
 # required by libreoffice-bin (argument)
 >=media-libs/harfbuzz-8.4.0 icu
 # required by app-office/libreoffice-bin-7.6.4.1::gentoo
 # required by libreoffice-bin (argument)
->=dev-libs/xmlsec-1.3.3-r1 nss
-# required by x11-misc/xdg-utils-1.2.1-r1::gentoo
-# required by app-office/libreoffice-bin-7.6.4.1::gentoo
-# required by libreoffice-bin (argument)
->=app-text/xmlto-0.0.28-r11 text
+>=dev-libs/xmlsec-1.3.4 nss
+# required by dev-qt/qtwidgets-5.15.13::gentoo[gtk]
+# required by dev-qt/qtsvg-5.15.13::gentoo
 # required by app-admin/keepassxc-2.7.8::gentoo
-# required by keepassxc (argument)
->=sys-libs/zlib-1.3.1-r1 minizip
-# required by sys-auth/polkit-124-r1::gentoo[systemd]
-# required by mate-extra/mate-polkit-1.28.1::gentoo
-# required by mate-polkit (argument)
->=sys-apps/systemd-255.5-r2 policykit
-# required by xfce-base/xfce4-panel-4.19.3::gentoo[dbusmenu]
-# required by xfce-base/xfce4-power-manager-4.19.2::gentoo[panel-plugin]
-# required by xfce4-power-manager (argument)
->=dev-libs/libdbusmenu-16.04.0-r2 gtk3
-# required by www-client/firefox-125.0.3::gentoo[system-libvpx]
-# required by firefox (argument)
->=media-libs/libvpx-1.14.0 postproc
-# required by media-gfx/gimp-2.10.36-r2::gentoo
-# required by gimp (argument)
+# required by @selected
+# required by @world (argument)
+>=dev-qt/qtgui-5.15.13 dbus
+# required by app-text/zathura-pdf-poppler-0.3.2::gentoo
+# required by app-text/zathura-meta-0::gentoo[pdf]
+# required by zathura-meta (argument)
 >=app-text/poppler-24.04.0 cairo
 # required by media-gfx/gimp-2.10.36-r2::gentoo
 # required by gimp (argument)
 >=media-libs/gegl-0.4.48 cairo
-# required by app-office/libreoffice-bin-7.6.4.1::gentoo
-# required by libreoffice-bin (argument)
->=media-libs/harfbuzz-8.3.0 icu
-# required by www-client/firefox-115.10.0::gentoo[system-libvpx]
-# required by firefox (argument)
->=media-libs/libvpx-1.13.1-r1 postproc
-# required by media-gfx/gimp-2.10.36::gentoo
-# required by gimp (argument)
->=app-text/poppler-24.02.0 cairo
-# required by media-gfx/gimp-2.10.36::gentoo
-# required by gimp (argument)
->=media-libs/gegl-0.4.46 cairo
-# required by x11-misc/pywal-3.3.0::guru
-# required by x11-misc/pywal (argument)
->=media-gfx/imagemagick-7.1.1.25 jpeg
-# required by www-client/chromium-124.0.6367.155::gentoo
-# required by chromium (argument)
->=dev-libs/libxml2-2.12.6 icu
-# required by www-client/chromium-124.0.6367.155::gentoo
-# required by chromium (argument)
->=net-libs/nodejs-20.12.1 inspector
-# required by www-client/chromium-124.0.6367.155::gentoo[system-toolchain]
-# required by chromium (argument)
->=virtual/rust-1.77.1 profiler
-# required by virtual/rust-1.77.1::gentoo
-# required by www-client/chromium-124.0.6367.155::gentoo[system-toolchain]
-# required by chromium (argument)
->=dev-lang/rust-bin-1.77.1 profiler
-# required by app-emulation/libvirt-9.8.0-r2::gentoo[virt-network]
-# required by app-emulation/libvirt-glib-4.0.0::gentoo
-# required by app-emulation/virt-manager-4.1.0-r1::gentoo[-test]
-# required by virt-manager (argument)
->=net-dns/dnsmasq-2.90 script
-# required by app-crypt/swtpm-0.8.1-r2::gentoo
-# required by app-emulation/libvirt-9.8.0-r2::gentoo[qemu]
-# required by app-emulation/libvirt-glib-4.0.0::gentoo
-# required by app-emulation/virt-manager-4.1.0-r1::gentoo[-test]
-# required by virt-manager (argument)
->=net-libs/gnutls-3.8.0 pkcs11 tools
-# required by app-emulation/virt-manager-4.1.0-r1::gentoo[-test,gui]
-# required by @selected
-# required by @world (argument)
->=net-misc/spice-gtk-0.42-r3 usbredir
-# required by www-client/torbrowser-launcher-0.3.7::torbrowser
-# required by torbrowser-launcher (argument)
->=x11-libs/gtk+-3.24.41 wayland
-# required by www-client/torbrowser-launcher-0.3.7::torbrowser
-# required by torbrowser-launcher (argument)
->=app-crypt/gpgme-1.23.2 python
-# required by www-client/torbrowser-launcher-0.3.7::torbrowser
-# required by torbrowser-launcher (argument)
->=dev-python/PyQt5-5.15.10-r1 widgets
-# required by x11-libs/gtk+-3.24.41::gentoo[wayland]
-# required by www-client/torbrowser-launcher-0.3.7::torbrowser
-# required by torbrowser-launcher (argument)
->=media-libs/mesa-24.0.7 wayland
+# required by media-libs/lv2-1.18.10::gentoo[python_single_target_python3_11]
+# required by media-libs/lilv-0.24.24::gentoo
+# required by media-sound/audacity-3.4.2-r1::gentoo[lv2]
+# required by media-sound/audacity (argument)
+>=dev-python/lxml-5.2.2 python_targets_python3_11
+# required by media-libs/lv2-1.18.10::gentoo[python_single_target_python3_11]
+# required by media-libs/lilv-0.24.24::gentoo
+# required by media-sound/audacity-3.4.2-r1::gentoo[lv2]
+# required by media-sound/audacity (argument)
+>=dev-python/pygments-2.18.0 python_targets_python3_11
+# required by media-libs/lv2-1.18.10::gentoo[python_single_target_python3_11]
+# required by media-libs/lilv-0.24.24::gentoo
+# required by media-sound/audacity-3.4.2-r1::gentoo[lv2]
+# required by media-sound/audacity (argument)
+>=dev-python/rdflib-7.0.0 python_targets_python3_11
+# required by dev-python/rdflib-7.0.0::gentoo
+# required by media-libs/lv2-1.18.10::gentoo[python_single_target_python3_11]
+# required by media-libs/lilv-0.24.24::gentoo
+# required by media-sound/audacity-3.4.2-r1::gentoo[lv2]
+# required by media-sound/audacity (argument)
+>=dev-python/isodate-0.6.1-r1 python_targets_python3_11
+# required by dev-python/rdflib-7.0.0::gentoo
+# required by media-libs/lv2-1.18.10::gentoo[python_single_target_python3_11]
+# required by media-libs/lilv-0.24.24::gentoo
+# required by media-sound/audacity-3.4.2-r1::gentoo[lv2]
+# required by media-sound/audacity (argument)
+>=dev-python/html5lib-1.1-r2 python_targets_python3_11
+# required by dev-python/rdflib-7.0.0::gentoo
+# required by media-libs/lv2-1.18.10::gentoo[python_single_target_python3_11]
+# required by media-libs/lilv-0.24.24::gentoo
+# required by media-sound/audacity-3.4.2-r1::gentoo[lv2]
+# required by media-sound/audacity (argument)
+>=dev-python/pyparsing-3.1.2 python_targets_python3_11
+# required by dev-python/pluggy-1.5.0::gentoo
+# required by dev-python/hatchling-1.24.2::gentoo[-test]
+# required by dev-python/colorama-0.4.6::gentoo
+# required by app-text/tldr-3.2.0::guru
+# required by tldr (argument)
+>=dev-python/gpep517-16 python_targets_python3_11
+# required by dev-python/rdflib-7.0.0::gentoo
+# required by media-libs/lv2-1.18.10::gentoo[python_single_target_python3_11]
+# required by media-libs/lilv-0.24.24::gentoo
+# required by media-sound/audacity-3.4.2-r1::gentoo[lv2]
+# required by media-sound/audacity (argument)
+>=dev-python/poetry-core-1.9.0 python_targets_python3_11
+# required by dev-python/poetry-core-1.9.0::gentoo[-test]
+# required by dev-python/rdflib-7.0.0::gentoo
+# required by media-libs/lv2-1.18.10::gentoo[python_single_target_python3_11]
+# required by media-libs/lilv-0.24.24::gentoo
+# required by media-sound/audacity-3.4.2-r1::gentoo[lv2]
+# required by media-sound/audacity (argument)
+>=dev-python/fastjsonschema-2.19.1 python_targets_python3_11
+# required by dev-python/poetry-core-1.9.0::gentoo[-test]
+# required by dev-python/rdflib-7.0.0::gentoo
+# required by media-libs/lv2-1.18.10::gentoo[python_single_target_python3_11]
+# required by media-libs/lilv-0.24.24::gentoo
+# required by media-sound/audacity-3.4.2-r1::gentoo[lv2]
+# required by media-sound/audacity (argument)
+>=dev-python/lark-1.1.9 python_targets_python3_11
+# required by dev-python/setuptools-70.0.0::gentoo
+# required by dev-python/cython-3.0.10::gentoo
+# required by dev-python/lxml-5.2.2::gentoo
+# required by media-libs/lv2-1.18.10::gentoo[python_single_target_python3_11]
+# required by media-libs/lilv-0.24.24::gentoo
+# required by media-sound/audacity-3.4.2-r1::gentoo[lv2]
+# required by media-sound/audacity (argument)
+>=dev-python/packaging-24.0 python_targets_python3_11
+# required by dev-python/ordered-set-4.1.0::gentoo
+# required by dev-python/setuptools-70.0.0::gentoo
+# required by dev-python/cython-3.0.10::gentoo
+# required by dev-python/lxml-5.2.2::gentoo
+# required by media-libs/lv2-1.18.10::gentoo[python_single_target_python3_11]
+# required by media-libs/lilv-0.24.24::gentoo
+# required by media-sound/audacity-3.4.2-r1::gentoo[lv2]
+# required by media-sound/audacity (argument)
+>=dev-python/flit-core-3.9.0 python_targets_python3_11
+# required by dev-python/pluggy-1.5.0::gentoo
+# required by dev-python/hatchling-1.24.2::gentoo[-test]
+# required by dev-python/colorama-0.4.6::gentoo
+# required by app-text/tldr-3.2.0::guru
+# required by tldr (argument)
+>=dev-python/setuptools-70.0.0 python_targets_python3_11
+# required by dev-python/setuptools-70.0.0::gentoo
+# required by dev-python/cython-3.0.10::gentoo
+# required by dev-python/lxml-5.2.2::gentoo
+# required by media-libs/lv2-1.18.10::gentoo[python_single_target_python3_11]
+# required by media-libs/lilv-0.24.24::gentoo
+# required by media-sound/audacity-3.4.2-r1::gentoo[lv2]
+# required by media-sound/audacity (argument)
+>=dev-python/jaraco-text-3.12.0 python_targets_python3_11
+# required by dev-python/setuptools-70.0.0::gentoo
+# required by dev-python/cython-3.0.10::gentoo
+# required by dev-python/lxml-5.2.2::gentoo
+# required by media-libs/lv2-1.18.10::gentoo[python_single_target_python3_11]
+# required by media-libs/lilv-0.24.24::gentoo
+# required by media-sound/audacity-3.4.2-r1::gentoo[lv2]
+# required by media-sound/audacity (argument)
+>=dev-python/more-itertools-10.2.0 python_targets_python3_11
+# required by dev-python/setuptools-70.0.0::gentoo
+# required by dev-python/cython-3.0.10::gentoo
+# required by dev-python/lxml-5.2.2::gentoo
+# required by media-libs/lv2-1.18.10::gentoo[python_single_target_python3_11]
+# required by media-libs/lilv-0.24.24::gentoo
+# required by media-sound/audacity-3.4.2-r1::gentoo[lv2]
+# required by media-sound/audacity (argument)
+>=dev-python/ordered-set-4.1.0 python_targets_python3_11
+# required by dev-python/setuptools-70.0.0::gentoo
+# required by dev-python/cython-3.0.10::gentoo
+# required by dev-python/lxml-5.2.2::gentoo
+# required by media-libs/lv2-1.18.10::gentoo[python_single_target_python3_11]
+# required by media-libs/lilv-0.24.24::gentoo
+# required by media-sound/audacity-3.4.2-r1::gentoo[lv2]
+# required by media-sound/audacity (argument)
+>=dev-python/platformdirs-4.2.2 python_targets_python3_11
+# required by dev-python/setuptools-70.0.0::gentoo
+# required by dev-python/cython-3.0.10::gentoo
+# required by dev-python/lxml-5.2.2::gentoo
+# required by media-libs/lv2-1.18.10::gentoo[python_single_target_python3_11]
+# required by media-libs/lilv-0.24.24::gentoo
+# required by media-sound/audacity-3.4.2-r1::gentoo[lv2]
+# required by media-sound/audacity (argument)
+>=dev-python/wheel-0.43.0 python_targets_python3_11
+# required by dev-python/pluggy-1.5.0::gentoo
+# required by dev-python/hatchling-1.24.2::gentoo[-test]
+# required by dev-python/colorama-0.4.6::gentoo
+# required by app-text/tldr-3.2.0::guru
+# required by tldr (argument)
+>=dev-python/setuptools-scm-8.1.0 python_targets_python3_11
+# required by dev-python/jaraco-text-3.12.0::gentoo
+# required by dev-python/setuptools-70.0.0::gentoo
+# required by dev-python/cython-3.0.10::gentoo
+# required by dev-python/lxml-5.2.2::gentoo
+# required by media-libs/lv2-1.18.10::gentoo[python_single_target_python3_11]
+# required by media-libs/lilv-0.24.24::gentoo
+# required by media-sound/audacity-3.4.2-r1::gentoo[lv2]
+# required by media-sound/audacity (argument)
+>=dev-python/jaraco-context-5.3.0 python_targets_python3_11
+# required by dev-python/jaraco-text-3.12.0::gentoo
+# required by dev-python/setuptools-70.0.0::gentoo
+# required by dev-python/cython-3.0.10::gentoo
+# required by dev-python/lxml-5.2.2::gentoo
+# required by media-libs/lv2-1.18.10::gentoo[python_single_target_python3_11]
+# required by media-libs/lilv-0.24.24::gentoo
+# required by media-sound/audacity-3.4.2-r1::gentoo[lv2]
+# required by media-sound/audacity (argument)
+>=dev-python/jaraco-functools-4.0.1 python_targets_python3_11
+# required by dev-python/gpep517-16::gentoo
+# required by dev-python/colorama-0.4.6::gentoo
+# required by app-text/tldr-3.2.0::guru
+# required by tldr (argument)
+>=dev-python/installer-0.7.0 python_targets_python3_11
+# required by dev-python/html5lib-1.1-r2::gentoo
+# required by dev-python/rdflib-7.0.0::gentoo
+# required by media-libs/lv2-1.18.10::gentoo[python_single_target_python3_11]
+# required by media-libs/lilv-0.24.24::gentoo
+# required by media-sound/audacity-3.4.2-r1::gentoo[lv2]
+# required by media-sound/audacity (argument)
+>=dev-python/six-1.16.0-r1 python_targets_python3_11
+# required by dev-python/html5lib-1.1-r2::gentoo
+# required by dev-python/rdflib-7.0.0::gentoo
+# required by media-libs/lv2-1.18.10::gentoo[python_single_target_python3_11]
+# required by media-libs/lilv-0.24.24::gentoo
+# required by media-sound/audacity-3.4.2-r1::gentoo[lv2]
+# required by media-sound/audacity (argument)
+>=dev-python/webencodings-0.5.1-r2 python_targets_python3_11
+# required by dev-python/pygments-2.18.0::gentoo
+# required by media-libs/lv2-1.18.10::gentoo[python_single_target_python3_11]
+# required by media-libs/lilv-0.24.24::gentoo
+# required by media-sound/audacity-3.4.2-r1::gentoo[lv2]
+# required by media-sound/audacity (argument)
+>=dev-python/hatchling-1.24.2 python_targets_python3_11
+# required by dev-python/hatchling-1.24.2::gentoo[-test]
+# required by dev-python/colorama-0.4.6::gentoo
+# required by app-text/tldr-3.2.0::guru
+# required by tldr (argument)
+>=dev-python/editables-0.5 python_targets_python3_11
+# required by dev-python/hatchling-1.24.2::gentoo[-test]
+# required by dev-python/colorama-0.4.6::gentoo
+# required by app-text/tldr-3.2.0::guru
+# required by tldr (argument)
+>=dev-python/pathspec-0.12.1 python_targets_python3_11
+# required by dev-python/hatchling-1.24.2::gentoo[-test]
+# required by dev-python/colorama-0.4.6::gentoo
+# required by app-text/tldr-3.2.0::guru
+# required by tldr (argument)
+>=dev-python/pluggy-1.5.0 python_targets_python3_11
+# required by dev-python/hatchling-1.24.2::gentoo[-test]
+# required by dev-python/colorama-0.4.6::gentoo
+# required by app-text/tldr-3.2.0::guru
+# required by tldr (argument)
+>=dev-python/trove-classifiers-2024.5.22 python_targets_python3_11
+# required by dev-python/lxml-5.2.2::gentoo
+# required by media-libs/lv2-1.18.10::gentoo[python_single_target_python3_11]
+# required by media-libs/lilv-0.24.24::gentoo
+# required by media-sound/audacity-3.4.2-r1::gentoo[lv2]
+# required by media-sound/audacity (argument)
+>=dev-python/cython-3.0.10 python_targets_python3_11
