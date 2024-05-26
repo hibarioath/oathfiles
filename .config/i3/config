@@ -13,7 +13,7 @@ exec --no-startup-id ~/.config/polybar/launch.sh
 bindsym $mod+Return exec alacritty
 bindsym $mod+g exec gimp
 bindsym $mod+p exec pavucontrol
-bindsym $mod+j exec firefox
+bindsym $mod+j exec librewolf
 bindsym $mod+l exec lxappearance
 bindsym $mod+k exec keepassxc
 bindsym $mod+v exec virt-manager
@@ -119,13 +119,12 @@ bindsym Shift+Print exec --no-startup-id maim --window $(xdotool getactivewindow
 bindsym --release $mod+Shift+c exec "xcolor -s clipboard"
 
 # class                 border  backgr. text    indicator child_border
-client.focused           #da9e6c #090e23 #da9e6c #da9e6c   #da9e6c
+client.focused           #d699b6 #000000 #ffffff #d699b6   #d699b6
 
 mouse_warping none
 
 default_floating_border pixel
-default_border pixel 1
+default_border pixel 0
 
 bindsym $mod+Shift+l exec --no-startup-id i3lock -c 000000
-bindsym $mod+Shift+h exec --no-startup-id ~/oathfiles/Scripts/hibernateslock.sh
 bindsym $mod+Shift+p exec --no-startup-id ~/oathfiles/Scripts/suspendslock.sh

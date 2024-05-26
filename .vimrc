@@ -3,6 +3,9 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+" Plugin 'sslivkoff/vim-scroll-barnacle'
+Plugin 'sainnhe/everforest'
+" Plugin 'vim-airline/vim-airline'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'preservim/vim-markdown'
 Plugin 'chaimleib/vim-renpy'
@@ -14,6 +17,9 @@ filetype plugin indent on    " required
 
 " Put your non-Plugin stuff after this line
 
+set cursorline
+set ttyfast
+set mouse=a
 syntax on
 set shell=/bin/bash
 set number
