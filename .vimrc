@@ -3,9 +3,7 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" Plugin 'sslivkoff/vim-scroll-barnacle'
-Plugin 'sainnhe/everforest'
-" Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'preservim/vim-markdown'
 Plugin 'chaimleib/vim-renpy'
