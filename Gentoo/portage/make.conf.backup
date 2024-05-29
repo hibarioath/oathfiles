@@ -1,41 +1,15 @@
-COMMON_FLAGS="-march=native -O2 -pipe"
+# These settings were set by the catalyst build script that automatically
+# built this stage.
+# Please consult /usr/share/portage/config/make.conf.example for a more
+# detailed example.
+COMMON_FLAGS="-O2 -pipe"
 CFLAGS="${COMMON_FLAGS}"
 CXXFLAGS="${COMMON_FLAGS}"
 FCFLAGS="${COMMON_FLAGS}"
 FFLAGS="${COMMON_FLAGS}"
 
-VIDEO_CARDS="nvidia"
+# NOTE: This stage was built with the bindist Use flag enabled
 
-USE="systemd xinerama X \
--jack alsa pipewire pulseaudio sound-server vulkan \
-policykit hardened gtk \
-nvidia nvenc \
-python_12 python_targets_python3_12 python_single_target_python3_12 \ 
--python_single_target_python3_11 -python_targets_python3_11 -python_11 \
--qt5 -qt6 -rdp -scanner -geoip -boost -multilib \
--bluetooth -gnome -gnome-keyring -gstreamer \
-automount gvfs udisks trayicon -cdda \
--kde -dvdr -vcd -dvd -css -aqua -Xaw3d -telemetry -geolocation \
--cdr -cuda -debug -emacs -xemacs -latex -wayland \
--bash-completion -zsh-completion -cups -samba \
--panel-plugin -bindist -wxwidgets -smartcard -dc1394 -ieee1394 \
--v4l -lastfm -eds -kerberos -ldap"
-
-FEATURES="parallel-fetch parallel-install candy"
-
-MAKEOPTS="-j12 -l13"
-# EMERGE_DEFAULT_OPTS="-j12"
-
-CONFIG_PROTECT="-*"
-CONFIG_PROTECT_MASK="-*"
-
-ACCEPT_LICENSE="*"
-
-PORTAGE_SCHEDULING_POLICY="idle"
-# PORTAGE_NICENESS=-1
-
+# This sets the language of build output to English.
+# Please keep this setting intact when reporting bugs.
 LC_MESSAGES=C.utf8
-ACCEPT_KEYWORDS="~amd64"
-GENTOO_MIRRORS="https://repo.ifca.es/gentoo-distfiles \
-    rsync://repo.ifca.es/gentoo-distfiles \
-    ftp://repo.ifca.es/gentoo-distfiles"

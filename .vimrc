@@ -3,7 +3,7 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'vim-airline/vim-airline'
+Plugin 'baskerville/vim-sxhkdrc'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'preservim/vim-markdown'
 Plugin 'chaimleib/vim-renpy'

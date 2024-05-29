@@ -1,2 +1,0 @@
-
-exec /bin/i3

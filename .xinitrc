@@ -1,2 +1,9 @@
-exec /bin/i3
-exec xrandr --output DP-2 --mode 1920x1080 --rate 164.97
+gentoo-pipewire-launcher &
+sxhkd &
+xautolock -time 10 -locker slock &
+# ~/Artema/Scripts/redshift.sh
+picom &
+~/.fehbg &
+setxkbmap es &
+slstatus &
+exec dwm
