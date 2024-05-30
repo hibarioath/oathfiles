@@ -1,0 +1,39 @@
+super + shift + p
+	s2ram && slock
+super + shift + l
+	slock
+
+super + shift + c
+	xcolor -s clipboard
+super + shift + s
+	maim --select | xclip -selection clipboard -t image/png
+super + y
+	maim | xclip -selection clipboard -t image/png
+super + shift + y
+	maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
+super + m
+	librewolf
+super + p
+	pavucontrol
+super + x
+	keepassxc
+super + v
+	virt-manager
+super + n
+	pcmanfm
+super + shift + u
+	gentoo-pipewire-launcher
+super + shift + r
+	~/Artema/Scripts/redshift.sh
+super + ñ
+	picom
+super + F6
+	xbacklight -inc 5
+super + F5
+	xbacklight -dec 5
+super + F1
+	pactl set-sink-mute @DEFAULT_SINK@ toggle
+super + F3
+	pactl set-sink-volume @DEFAULT_SINK@ +5%
+super + F2
+	pactl set-sink-volume @DEFAULT_SINK@ -5%
