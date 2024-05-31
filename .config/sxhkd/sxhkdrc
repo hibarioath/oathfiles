@@ -1,7 +1,7 @@
 super + shift + p
-	s2ram && slock
+	systemctl suspend && i3lock -c 000000
 super + shift + l
-	slock
+	i3lock -c 000000
 
 super + shift + c
 	xcolor -s clipboard
