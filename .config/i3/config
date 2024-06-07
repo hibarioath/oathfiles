@@ -7,24 +7,26 @@ exec --no-startup-id /usr/libexec/polkit-mate-authentication-agent-1
 exec --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
 exec --no-startup-id unclutter -idle 3
 exec --no-startup-id dunst
-exec_always --no-startup-id autotiling
+exec_always --no-startup-id autotiling-rs
 exec --no-startup-id ~/.config/polybar/launch.sh
+exec --no-startup-id syncthing
 
 bindsym $mod+Return exec alacritty
 bindsym $mod+g exec gimp
 bindsym $mod+p exec pavucontrol
-bindsym $mod+j exec librewolf
+bindsym $mod+j exec firefox
 bindsym $mod+l exec lxappearance
 bindsym $mod+k exec keepassxc
 bindsym $mod+v exec virt-manager
 bindsym $mod+n exec --no-startup-id pcmanfm
-bindsym $mod+d exec --no-startup-id dmenu_run
+#bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+d exec --no-startup-id rofi -show drun
 bindsym $mod+q kill
-bindsym $mod+Shift+k exec xautolock -detectsleep -time 5 -locker "i3lock -c 000000"
+bindsym $mod+Shift+k exec xautolock -detectsleep -time 5 -locker "i3lock -c 282828"
 
-exec_always xautolock -detectsleep -time 10 -locker "i3lock -c 000000"
-# exec --no-startup-id ~/Artema/Scripts/redshift2.sh
-exec --no-startup-id ~/Artema/Scripts/redshift.sh
+exec_always xautolock -detectsleep -time 10 -locker "i3lock -c 282828"
+exec --no-startup-id ~/Artema/Scripts/redshift2.sh
+#exec --no-startup-id ~/Artema/Scripts/redshift.sh
 exec --no-startup-id ~/.fehbg
 # exec --no-startup-id nm-applet
 exec --no-startup-id picom
@@ -111,7 +113,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # gaps outer 5
-# gaps inner 5
+gaps inner 5
 
 bindsym Print exec "maim | xclip -selection clipboard -t image/png"
 bindsym $mod+Shift+s exec "maim --select | xclip -selection clipboard -t image/png"
@@ -127,5 +129,5 @@ mouse_warping none
 default_floating_border pixel
 default_border pixel 1
 
-bindsym $mod+Shift+l exec --no-startup-id i3lock -c 000000
+bindsym $mod+Shift+l exec --no-startup-id i3lock -c 282828
 bindsym $mod+Shift+p exec --no-startup-id ~/oathfiles/Scripts/suspendslock.sh

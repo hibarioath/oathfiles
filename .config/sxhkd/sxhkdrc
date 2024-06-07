@@ -1,7 +1,7 @@
 super + shift + p
-	systemctl suspend && i3lock -c 000000
+	~/Artema/Scripts/suspend.sh && i3lock -c 282828
 super + shift + l
-	i3lock -c 000000
+	i3lock -c 282828
 
 super + shift + c
 	xcolor -s clipboard
@@ -11,8 +11,10 @@ super + y
 	maim | xclip -selection clipboard -t image/png
 super + shift + y
 	maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
+super + d
+	rofi -show drun
 super + m
-	librewolf
+	firefox
 super + p
 	pavucontrol
 super + x
@@ -21,12 +23,7 @@ super + v
 	virt-manager
 super + n
 	pcmanfm
-super + shift + u
-	gentoo-pipewire-launcher
-super + shift + r
-	~/Artema/Scripts/redshift.sh
-super + ñ
-	picom
+
 super + F6
 	xbacklight -inc 5
 super + F5
