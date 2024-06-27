@@ -5,20 +5,20 @@ exec --no-startup-id dex --autostart --environment i3
 exec_always --no-startup-id setxkbmap es
 exec --no-startup-id /usr/libexec/polkit-mate-authentication-agent-1
 exec --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
+exec --no-startup-id ~/nixmatepolkit.sh
 exec --no-startup-id unclutter -idle 3
 exec --no-startup-id dunst
-exec_always --no-startup-id autotiling-rs
-exec --no-startup-id ~/.config/polybar/launch.sh
+exec_always --no-startup-id autotiling
+exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id syncthing
+exec ~/.xrandrnixoath.sh
 
 bindsym $mod+Return exec alacritty
 bindsym $mod+g exec gimp
 bindsym $mod+p exec pavucontrol
-bindsym $mod+j exec firefox
-bindsym $mod+l exec lxappearance
+bindsym $mod+j exec librewolf
 bindsym $mod+k exec keepassxc
-bindsym $mod+v exec virt-manager
-bindsym $mod+n exec --no-startup-id pcmanfm
+bindsym $mod+n exec --no-startup-id nemo
 #bindsym $mod+d exec --no-startup-id dmenu_run
 bindsym $mod+d exec --no-startup-id rofi -show drun
 bindsym $mod+q kill
@@ -55,8 +55,13 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-# bindsym $mod+h split h
-# bindsym $mod+v split v
+bindsym $mod+i focus output left
+bindsym $mod+o focus output right
+bindsym $mod+Shift+o move workspace to output right
+bindsym $mod+Shift+i move workspace to output left
+
+bindsym $mod+h split h
+bindsym $mod+v split v
 
 bindsym $mod+f fullscreen toggle
 
@@ -111,9 +116,11 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+bindsym Mod1+Left workspace prev
+bindsym Mod1+Right workspace next
 
 # gaps outer 5
-gaps inner 5
+# gaps inner 5
 
 bindsym Print exec "maim | xclip -selection clipboard -t image/png"
 bindsym $mod+Shift+s exec "maim --select | xclip -selection clipboard -t image/png"
@@ -122,7 +129,7 @@ bindsym Shift+Print exec --no-startup-id maim --window $(xdotool getactivewindow
 bindsym --release $mod+Shift+c exec "xcolor -s clipboard"
 
 # class                 border  backgr. text    indicator child_border
-client.focused           #fabd2f #000000 #ffffff #fabd2f   #fabd2f
+client.focused           #915caf #000000 #ffffff #915caf   #915caf
 
 mouse_warping none
 
