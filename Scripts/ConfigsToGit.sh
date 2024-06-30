@@ -1,4 +1,2 @@
-cd ~/
-cd .config/
-cp -rfv ~/.vimrc ~/oathfiles 
-cp -rfv sxhkd/ fish/ libreoffice/ pcmanfm/ alacritty/ fastfetch/ polybar/ i3/ dunst/ picom/ ~/oathfiles/.config/
+cd ~/.config/
+cp -rfv sxhkd/ fish/ alacritty/ fastfetch/ polybar/ i3/ dunst/ picom/ hypr/ waybar/ ~/oathfiles/.config/
