@@ -1,24 +1,24 @@
 import = [
-    "~/.config/alacritty/themes/alabaster_dark.toml"
+#    "~/.config/alacritty/themes/alabaster_dark.toml"
 ]
 
 [font]
-size = 12
+size = 11
 [font.bold]
-family = "BlexMono Nerd Font"
+family = "Ubuntu Sans Mono"
 [font.bold_italic]
-family = "BlexMono Nerd Font"
+family = "Ubuntu Sans Mono"
 [font.italic]
-family = "BlexMono Nerd Font"
+family = "ubuntu Sans Mono"
 [font.normal]
-family = "BlexMono Nerd Font"
+family = "Ubuntu Sans Mono"
 
 [window]
 opacity = 1.00
 
 [window.padding]
-x = 5
-y = 5
+x = 10
+y = 10
 
 [[keyboard.bindings]]
 action = "CreateNewWindow"
