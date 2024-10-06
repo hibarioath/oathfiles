@@ -1,5 +1,0 @@
-# Ver todos los paquetes instalados
-# con Portage directamente (explícitos)
-cat /var/lib/portage/world | less
-# Adicionalmente, Porthole es un frontend
-# GUI para Portage
