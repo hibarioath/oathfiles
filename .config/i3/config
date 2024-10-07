@@ -124,7 +124,7 @@ client.focused           #ac4242 #000000 #ac4242 #ac4242   #ac4242
 mouse_warping none
 
 default_floating_border pixel
-default_border pixel 3
+default_border pixel 0
 
 bindsym $mod+Shift+l exec --no-startup-id i3lock -c #181818
 bindsym $mod+Shift+p exec --no-startup-id systemctl suspend && i3lock -c #181818
