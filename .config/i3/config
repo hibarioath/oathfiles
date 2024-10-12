@@ -9,13 +9,13 @@ exec --no-startup-id dunst
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id redshift -l 37:0
 exec --no-startup-id ~/.fehbg
-exec --no-startup-id nm-applet
+# exec --no-startup-id nm-applet
 exec --no-startup-id picom
 
 bindsym $mod+Return exec alacritty
 bindsym $mod+p exec pavucontrol
 bindsym $mod+k exec keepassxc
-bindsym $mod+e exec --no-startup-id pcmanfm
+bindsym $mod+e exec --no-startup-id thunar
 #bindsym $mod+d exec --no-startup-id dmenu_run
 bindsym $mod+d exec --no-startup-id rofi -show drun
 bindsym $mod+q kill
@@ -110,7 +110,7 @@ bindsym Mod1+Ctrl+Left workspace prev
 bindsym Mod1+Ctrl+Right workspace next
 
 gaps outer 5
-gaps inner 5
+gaps inner 10
 
 bindsym Print exec "maim | xclip -selection clipboard -t image/png"
 bindsym $mod+Shift+s exec "maim --select | xclip -selection clipboard -t image/png"
@@ -119,12 +119,16 @@ bindsym Shift+Print exec --no-startup-id maim --window $(xdotool getactivewindow
 bindsym --release $mod+Shift+c exec "~/.cargo/bin/xcolor -s clipboard"
 
 # class                 border  backgr. text    indicator child_border
-client.focused           #ac4242 #000000 #ac4242 #ac4242   #ac4242
+client.focused           #90a959 #000000 #ac4242 #90a959   #90a959
 
 mouse_warping none
 
 default_floating_border pixel
 default_border pixel 0
 
-bindsym $mod+Shift+l exec --no-startup-id i3lock -c #181818
-bindsym $mod+Shift+p exec --no-startup-id systemctl suspend && i3lock -c #181818
+# Si no usas un DisplayManager tienes que ejecutar esto pa que
+# flatpak te abra los putos exploradores de archivos hostia
+exec --no-startup-id /usr/libexec/xdg-desktop-portal-gtk
+exec_always xrandr --output DP-2 --mode 1920x1080 --rate 164.97
+bindsym $mod+Shift+l exec --no-startup-id i3lock -c 181818
+bindsym $mod+Shift+p exec --no-startup-id systemctl suspend && i3lock -c 181818

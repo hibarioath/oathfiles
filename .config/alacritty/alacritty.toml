@@ -5,16 +5,16 @@ import = [
 [font]
 size = 11
 [font.bold]
-family = "Ubuntu Sans Mono"
+family = "Monospace"
 [font.bold_italic]
-family = "Ubuntu Sans Mono"
+family = "Monospace"
 [font.italic]
-family = "ubuntu Sans Mono"
+family = "Monospace"
 [font.normal]
-family = "Ubuntu Sans Mono"
+family = "Monospace"
 
 [window]
-opacity = 1.00
+opacity = 0.95
 
 [window.padding]
 x = 10

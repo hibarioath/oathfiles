@@ -6,19 +6,19 @@
  *******************************************************************************/
 
 * {
-    font:   "JetBrainsMono Nerd Font 11";
+    font:   "Mononoki Nerd Font 13";
 
-    nord0:     #282828;
+    nord0:     #181818;
     nord1:     #3b4252;
     nord2:     #434c5e;
     nord3:     #4c566a;
 
-    nord4:     #ebdbb2;
+    nord4:     #f8f8f8;
     nord5:     #e5e9f0;
     nord6:     #eceff4;
 
     nord7:     #8fbcbb;
-    nord8:     #b8bb26;
+    nord8:     #90a959;
     nord9:     #81a1c1;
     nord10:    #5e81ac;
     nord11:    #bf616a;
@@ -42,8 +42,8 @@ window {
     border-color:       @accent-color;
 
     location:   center;
-    width:      500px;
-    border:     1px;
+    width:      1200px;
+    border:     0px;
 }
 
 inputbar {
@@ -61,8 +61,8 @@ prompt {
 }
 
 listview {
-    lines:      4;
-    columns:    1;
+    lines:      12;
+    columns:    3;
 
     fixed-height:   false;
 }
